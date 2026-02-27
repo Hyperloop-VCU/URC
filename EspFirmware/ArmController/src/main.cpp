@@ -82,7 +82,8 @@ void setup() {
   memcpy(slave.peer_addr, receiverMac, 6);
   slave.channel = CHANNEL;
   slave.encrypt = 0;        
- 
+  Serial.println(WiFi.macAddress());
+  
   if (esp_now_add_peer(&slave) != ESP_OK) {
     Serial.println("Failed to add peer!");
 } else {
