@@ -49,20 +49,53 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len){
   //memcpy(&armData,data,sizeof(armData));
 
   //maybe make if statement to wait untill all data comes before printing
-   if (s1Ready && s2Ready) {
-    Serial.print("I just recieved --> ");
-    Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,"
-                  "@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
+   if (s1Ready) {
+    Serial.print("I just recieved --> Arm");
+    Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n,"
+                  ,
       armData.Connected,
       armData.d1, armData.d2, armData.d3, armData.d4, armData.d5,
-      armData.d6, armData.d7, armData.d8, armData.d9, armData.d10,
+      armData.d6, armData.d7, armData.d8, armData.d9, armData.d10);
+       s1Ready = false;
+       
+    }
+
+  if (s2Ready){
+    Serial.print("I just recieved --> Hand");
+    Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n,",
       handData.Connected,
       handData.d1, handData.d2, handData.d3, handData.d4, handData.d5,
       handData.d6, handData.d7, handData.d8, handData.d9, handData.d10);
-    s1Ready = false;
+   
     s2Ready = false;
   }
-}
+
+  else if (s1Ready && s2Ready){
+
+    Serial.print("I just recieved --> Arm and hand");
+    Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n"
+                  ,
+      armData.Connected,
+      armData.d1, armData.d2, armData.d3, armData.d4, armData.d5,
+      armData.d6, armData.d7, armData.d8, armData.d9, armData.d10);
+       
+
+
+
+    
+    Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
+      handData.Connected,
+      handData.d1, handData.d2, handData.d3, handData.d4, handData.d5,
+      handData.d6, handData.d7, handData.d8, handData.d9, handData.d10);
+
+      s1Ready = false;
+      s2Ready = false;
+    }
+
+
+  }
+  
+
   
  // for (int i = 0; i < 10; i++){
  //   serial.println(armData[i]);
