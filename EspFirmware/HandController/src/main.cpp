@@ -2,10 +2,14 @@
 #include <esp_now.h>
 #include <WiFi.h>
 #include <esp_wifi.h>
-
+#include <Wire.h>
+#include <Adafruit_BNO055.h>
 
 
 #define CHANNEL 1
+
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
+const int FSR_PIN = 1;
 uint8_t receiverMac[6] = {0xC8, 0xF0, 0x9E, 0x50, 0x75, 0x3D};
 esp_now_peer_info_t slave;
 
@@ -13,12 +17,12 @@ esp_now_peer_info_t slave;
 
 struct ImuHandData {
   int Connected;
-  float d1;
-  float d2;
-  float d3;
-  float d4;
-  float d5;
-  float d6;
+  float Linear_x;
+  float Linear_y;
+  float Linear_z;
+  float Roll;
+  float Pitch;
+  float Yaw;
   float d7;
   float d8;
   float d9;
@@ -26,7 +30,8 @@ struct ImuHandData {
   
 };
 
-ImuHandData data;
+ImuHandData IMU1;
+ImuHandData IMU2;
 
 
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status){
@@ -73,7 +78,9 @@ void setup() {
 
   
   Serial.begin(115200);
-
+  analogReadResolution(12);
+  analogSetAttenuation(ADC_11db);
+  Wire.begin(8, 9);
   WiFi.mode(WIFI_STA);
   esp_now_init();
   esp_now_register_send_cb(OnDataSent);
@@ -83,7 +90,17 @@ void setup() {
   slave.channel = CHANNEL;
   slave.encrypt = 0;        
   Serial.println(WiFi.macAddress());
- 
+
+  //check for IMU
+  if (!bno.begin()) {
+    Serial.println("BNO055 not found");
+    while (1);
+  }
+
+  bno.setExtCrystalUse(true);
+
+
+  
   if (esp_now_add_peer(&slave) != ESP_OK) {
     Serial.println("Failed to add peer!");
 } else {
@@ -126,19 +143,27 @@ raymonds imprimis espnow setup:
 
 void loop() {
   // put your main code here, to run repeatedly:
-  data.Connected = 1;
-  data.d1 = 1.0;
-  data.d2 = 2.0;
-  data.d3 = 3.0;
-  data.d4 = 4.0;
-  data.d5 = 5.0;
-  data.d6 = 6.0;
-  data.d7 = 7.0;
-  data.d8 = 8.0;
-  data.d9 = 9.0;
-  data.d10 = 10.0;
+  int rawValue = analogRead(FSR_PIN);
+  float voltage = rawValue *(3.3/4095.0);
+
+  int pressure = map(rawValue, 0, 4095, 0, 100);
+
+  imu::Vector<3> accel = bno.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+
+  IMU1.Connected = 1;
+  IMU1.Linear_x = accel.x();
+  IMU1.Linear_y = accel.y();
+  IMU1.Linear_z = accel.z();
+  IMU1.Roll = euler.z();
+  IMU1.Pitch = euler.y();
+  IMU1.Yaw = euler.z();
+  IMU1.d7 = 7.0;
+  IMU1.d8 = 8.0;
+  IMU1.d9 = 9.0;
+  IMU1.d10 = 10.0;
   Serial.println(WiFi.macAddress());
-  esp_now_send(slave.peer_addr, (uint8_t *)&data, sizeof(data));
+  esp_now_send(slave.peer_addr, (uint8_t *)&IMU1, sizeof(IMU1));
   
   delay(5000);
 }

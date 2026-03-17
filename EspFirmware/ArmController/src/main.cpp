@@ -2,10 +2,14 @@
 #include <esp_now.h>
 #include <WiFi.h>
 #include <esp_wifi.h>
-
+#include <Wire.h>
+#include <Adafruit_BNO055.h>
 
 
 #define CHANNEL 1
+
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
+Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
 uint8_t receiverMac[6] = {0xC8, 0xF0, 0x9E, 0x50, 0x75, 0x3D};
 esp_now_peer_info_t slave;
 
@@ -13,12 +17,12 @@ esp_now_peer_info_t slave;
 
 struct ImuArmData {
   int Connected;
-  float d1;
-  float d2;
-  float d3;
-  float d4;
-  float d5;
-  float d6;
+  float Linear_x;
+  float Linear_y;
+  float Linear_z;
+  float Roll;
+  float Pitch;
+  float Yaw;
   float d7;
   float d8;
   float d9;
@@ -26,8 +30,27 @@ struct ImuArmData {
   
 };
 
-ImuArmData data;
+ImuArmData IMU1;
+ImuArmData IMU2;
 
+
+
+void readIMU(Adafruit_BNO055 &sensor, ImuArmData &data) {
+  imu::Vector<3> accel = sensor.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  imu::Vector<3> euler = sensor.getVector(Adafruit_BNO055::VECTOR_EULER);
+
+  data.Connected = 1;
+  data.Linear_x  = accel.x();
+  data.Linear_y  = accel.y();
+  data.Linear_z  = accel.z();
+  data.Yaw       = euler.x();  // BNO055 euler: x=Yaw, y=Pitch, z=Roll
+  data.Pitch     = euler.y();
+  data.Roll      = euler.z();
+  data.d7  = 7.0;
+  data.d8  = 8.0;
+  data.d9  = 9.0;
+  data.d10 = 10.0;
+}
 
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status){
   Serial.print("I sent my data to--> ");
@@ -73,7 +96,7 @@ void setup() {
 
   
   Serial.begin(115200);
-
+  Wire.begin(8, 9);
   WiFi.mode(WIFI_STA);
   esp_now_init();
   esp_now_register_send_cb(OnDataSent);
@@ -83,6 +106,23 @@ void setup() {
   slave.channel = CHANNEL;
   slave.encrypt = 0;        
   Serial.println(WiFi.macAddress());
+
+  //check for IMU
+  if (!bno.begin()) {
+    Serial.println("BNO055 not found");
+    while (1);
+  }
+
+  bno.setExtCrystalUse(true);
+
+   if (!bno2.begin()) {
+    Serial.println("BNO055 2 not found");
+    while (1);
+  }
+
+  bno2.setExtCrystalUse(true);
+
+
   
   if (esp_now_add_peer(&slave) != ESP_OK) {
     Serial.println("Failed to add peer!");
@@ -90,6 +130,7 @@ void setup() {
     Serial.println("Peer added successfully.");
 }
   
+
   
   
   
@@ -126,19 +167,14 @@ raymonds imprimis espnow setup:
 
 void loop() {
   // put your main code here, to run repeatedly:
-  data.Connected = 1;
-  data.d1 = 1.1;
-  data.d2 = 2.2;
-  data.d3 = 3.3;
-  data.d4 = 4.4;
-  data.d5 = 5.5;
-  data.d6 = 6.6;
-  data.d7 = 7.7;
-  data.d8 = 8.8;
-  data.d9 = 9.9;
-  data.d10 = 10.10;
   
-  esp_now_send(slave.peer_addr, (uint8_t *)&data, sizeof(data));
+  readIMU(bno,  packet.IMU1);
+  readIMU(bno2, packet.IMU2);
+
+
+
+  
+  esp_now_send(slave.peer_addr, (uint8_t *)&packet, sizeof(packet));
   
   delay(5000);
 }

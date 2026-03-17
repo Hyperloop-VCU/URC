@@ -7,19 +7,19 @@
 #define CHANNEL 1
 
 uint8_t sender1Mac[6] = {0xB8, 0xF8, 0x62, 0xF6, 0xE7, 0x5C};
-uint8_t sender2Mac[6] = {0x8C, 0xBF, 0xEA, 0x8E, 0xF0, 0xD0};
+uint8_t sender2Mac[6] = {0xA0, 0xF2, 0x62, 0xEC, 0x54, 0xD8};//{0x8C, 0xBF, 0xEA, 0x8E, 0xF0, 0xD0};
 bool s1Ready = false;
 bool s2Ready = false;
 
 
 struct IMUdata {
   int Connected;
-  float d1;
-  float d2;
-  float d3;
-  float d4;
-  float d5;
-  float d6;
+  float Linear_x;
+  float Linear_y;
+  float Linear_z;
+  float Roll;
+  float Pitch;
+  float Yaw;
   float d7;
   float d8;
   float d9;
@@ -54,8 +54,8 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len){
     Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n,"
                   ,
       armData.Connected,
-      armData.d1, armData.d2, armData.d3, armData.d4, armData.d5,
-      armData.d6, armData.d7, armData.d8, armData.d9, armData.d10);
+      armData.Linear_x, armData.Linear_y, armData.Linear_z, armData.Roll, armData.Pitch,
+      armData.Yaw, armData.d7, armData.d8, armData.d9, armData.d10);
        s1Ready = false;
        
     }
@@ -64,8 +64,8 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len){
     Serial.print("I just recieved --> Hand");
     Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n,",
       handData.Connected,
-      handData.d1, handData.d2, handData.d3, handData.d4, handData.d5,
-      handData.d6, handData.d7, handData.d8, handData.d9, handData.d10);
+      handData.Linear_x, handData.Linear_y, handData.Linear_z, handData.Roll, handData.Pitch,
+      handData.Yaw, handData.d7, handData.d8, handData.d9, handData.d10);
    
     s2Ready = false;
   }
@@ -76,8 +76,8 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len){
     Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n"
                   ,
       armData.Connected,
-      armData.d1, armData.d2, armData.d3, armData.d4, armData.d5,
-      armData.d6, armData.d7, armData.d8, armData.d9, armData.d10);
+      armData.Linear_x, armData.Linear_y, armData.Linear_z, armData.Roll, armData.Pitch,
+      armData.Yaw, armData.d7, armData.d8, armData.d9, armData.d10);
        
 
 
@@ -85,8 +85,8 @@ void OnDataRecv(const uint8_t *mac_addr, const uint8_t *data, int data_len){
     
     Serial.printf("@%d,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n",
       handData.Connected,
-      handData.d1, handData.d2, handData.d3, handData.d4, handData.d5,
-      handData.d6, handData.d7, handData.d8, handData.d9, handData.d10);
+      handData.Linear_x, handData.Linear_y, handData.Linear_z, handData.Roll, handData.Pitch,
+      handData.Yaw, handData.d7, handData.d8, handData.d9, handData.d10);
 
       s1Ready = false;
       s2Ready = false;
