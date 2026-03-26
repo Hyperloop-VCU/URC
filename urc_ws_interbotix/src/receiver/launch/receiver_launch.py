@@ -11,7 +11,7 @@ from launch.actions import ExecuteProcess
 def generate_launch_description():
     declared_arguments = []
 
-    ExecuteProcess(
+    agent = ExecuteProcess(
         cmd = ['ros2', 'run', 'micro_ros_agent', 'micro_ros_agent', 'udp4', '--port', '8888'],
         output='screen'
     )
@@ -24,4 +24,5 @@ def generate_launch_description():
     )
 
 
+    return LaunchDescription([agent, receiver_node])
     
