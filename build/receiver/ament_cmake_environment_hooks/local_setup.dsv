@@ -1,0 +1,2 @@
+source;share/receiver/environment/ament_prefix_path.sh
+source;share/receiver/environment/path.sh

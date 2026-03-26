@@ -1,0 +1,1084 @@
+[0.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73b2dd4a64b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73b2dd5f82c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73b2dd5f82c0>>, mixin_verb=('build',))
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.091s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.091s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ayaan/URC/URC'
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.091s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.092s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'ignore'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'ignore_ament_install'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['colcon_pkg']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'colcon_pkg'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['colcon_meta']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'colcon_meta'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['ros']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'ros'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['cmake', 'python']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'cmake'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'python'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extensions ['python_setup_py']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware) by extension 'python_setup_py'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'ros'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['cmake', 'python']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'cmake'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'python'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extensions ['python_setup_py']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController) by extension 'python_setup_py'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/build) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/build) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/build) ignored
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'ros'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['cmake', 'python']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'cmake'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'python'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extensions ['python_setup_py']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/include) by extension 'python_setup_py'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/install) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/install) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/install) ignored
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/lib) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/log) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/log) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/log) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/src) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ArmController/test) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/include) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/lib) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/src) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/HandController/test) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'ros'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['cmake', 'python']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'cmake'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'ros'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['cmake', 'python']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'cmake'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/include) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['colcon_pkg']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'colcon_pkg'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['colcon_meta']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'colcon_meta'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['ros']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'ros'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['cmake', 'python']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'cmake'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'python'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extensions ['python_setup_py']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/lib) by extension 'python_setup_py'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'ignore_ament_install'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'ros'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['cmake', 'python']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'cmake'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'python'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extensions ['python_setup_py']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/src) by extension 'python_setup_py'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'ros'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['cmake', 'python']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'cmake'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'python'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extensions ['python_setup_py']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/ReceiverBoard/test) by extension 'python_setup_py'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'ros'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['cmake', 'python']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'cmake'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'python'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extensions ['python_setup_py']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender) by extension 'python_setup_py'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'ros'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['cmake', 'python']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'cmake'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'python'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extensions ['python_setup_py']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/include) by extension 'python_setup_py'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'ros'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['cmake', 'python']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'cmake'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'python'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extensions ['python_setup_py']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/lib) by extension 'python_setup_py'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'ros'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['cmake', 'python']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'cmake'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'python'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extensions ['python_setup_py']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/src) by extension 'python_setup_py'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'ros'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['cmake', 'python']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'cmake'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'python'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extensions ['python_setup_py']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(EspFirmware/microRos_sender/test) by extension 'python_setup_py'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'ros'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['cmake', 'python']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'cmake'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'python'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extensions ['python_setup_py']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix) by extension 'python_setup_py'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/build) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/build) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/build) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/install) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/install) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/install) ignored
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'ros'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['cmake', 'python']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'cmake'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'python'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extensions ['python_setup_py']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/launch) by extension 'python_setup_py'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/log) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/log) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/log) ignored
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'ros'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['cmake', 'python']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'cmake'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'python'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extensions ['python_setup_py']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src) by extension 'python_setup_py'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extensions ['ignore', 'ignore_ament_install']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extension 'ignore'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extension 'ignore_ament_install'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extensions ['colcon_pkg']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extension 'colcon_pkg'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extensions ['colcon_meta']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extension 'colcon_meta'
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extensions ['ros']
+[0.118s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/IMU_control) by extension 'ros'
+[0.120s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/IMU_control' with type 'ros.ament_python' and name 'IMU_control'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extensions ['ignore', 'ignore_ament_install']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extension 'ignore'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extension 'ignore_ament_install'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extensions ['colcon_pkg']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extension 'colcon_pkg'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extensions ['colcon_meta']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extension 'colcon_meta'
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extensions ['ros']
+[0.120s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel-workbench) by extension 'ros'
+[0.121s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/dynamixel-workbench' with type 'ros.ament_cmake' and name 'dynamixel_workbench_toolbox'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk) by extension 'ros'
+[0.122s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/dynamixel_sdk' with type 'ros.ament_cmake' and name 'dynamixel_sdk'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces) by extension 'ros'
+[0.122s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces' with type 'ros.ament_cmake' and name 'dynamixel_sdk_custom_interfaces'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_common_modules) by extension 'ros'
+[0.123s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_common_modules' with type 'ros.ament_python' and name 'interbotix_common_modules'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extension 'colcon_pkg'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extensions ['colcon_meta']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extension 'colcon_meta'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extensions ['ros']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_driver) by extension 'ros'
+[0.123s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xs_driver' with type 'ros.ament_cmake' and name 'interbotix_xs_driver'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extensions ['ignore', 'ignore_ament_install']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extension 'ignore'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extension 'ignore_ament_install'
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extensions ['colcon_pkg']
+[0.123s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_modules) by extension 'ros'
+[0.124s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xs_modules' with type 'ros.ament_python' and name 'interbotix_xs_modules'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extension 'ignore'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extension 'ignore_ament_install'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extensions ['colcon_pkg']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extension 'colcon_pkg'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extensions ['colcon_meta']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extension 'colcon_meta'
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extensions ['ros']
+[0.124s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_msgs) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xs_msgs' with type 'ros.ament_cmake' and name 'interbotix_xs_msgs'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xs_sdk) by extension 'ros'
+[0.125s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xs_sdk' with type 'ros.ament_cmake' and name 'interbotix_xs_sdk'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extensions ['ignore', 'ignore_ament_install']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extension 'ignore'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extension 'ignore_ament_install'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extensions ['colcon_pkg']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extension 'colcon_pkg'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extensions ['colcon_meta']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extension 'colcon_meta'
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extensions ['ros']
+[0.125s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_control) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xsarm_control' with type 'ros.ament_cmake' and name 'interbotix_xsarm_control'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/interbotix_xsarm_descriptions) by extension 'ros'
+[0.126s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/interbotix_xsarm_descriptions' with type 'ros.ament_cmake' and name 'interbotix_xsarm_descriptions'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/modern_robotics) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/modern_robotics' with type 'ros.ament_python' and name 'modern_robotics'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(urc_ws_interbotix/src/receiver) by extension 'ros'
+[0.127s] DEBUG:colcon.colcon_core.package_identification:Package 'urc_ws_interbotix/src/receiver' with type 'ros.ament_cmake' and name 'receiver'
+[0.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.144s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.145s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/ayaan/imprimis/imprimis_ws/install
+[0.145s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ayaan/ros2_ws/install
+[0.147s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 408 installed packages in /opt/ros/jazzy
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_args' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_target' from command line to 'None'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.179s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'IMU_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'IMU_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/IMU_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/IMU_control', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/IMU_control', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/dynamixel_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/dynamixel_sdk', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_sdk_custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_sdk_custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_clean_cache' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_clean_first' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'cmake_force_configure' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'ament_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'catkin_cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_common_modules' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.180s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_common_modules' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_common_modules', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_common_modules', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_common_modules', 'symlink_install': False, 'test_result_base': None}
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_args' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_target' from command line to 'None'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.180s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xs_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xs_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xs_msgs', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'modern_robotics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'modern_robotics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/modern_robotics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/modern_robotics', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'receiver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'receiver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/receiver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/receiver', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'dynamixel_workbench_toolbox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'dynamixel_workbench_toolbox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/dynamixel_workbench_toolbox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench', 'symlink_install': False, 'test_result_base': None}
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_target' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.181s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.181s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xs_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xs_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xs_driver', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver', 'symlink_install': False, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_sdk' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xs_sdk' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xs_sdk', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xs_sdk', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk', 'symlink_install': False, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xs_modules' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xs_modules' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xs_modules', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xs_modules', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_modules', 'symlink_install': False, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_descriptions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xsarm_descriptions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xsarm_descriptions', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions', 'symlink_install': False, 'test_result_base': None}
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_target' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.182s] Level 5:colcon.colcon_core.verb:set package 'interbotix_xsarm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.182s] DEBUG:colcon.colcon_core.verb:Building package 'interbotix_xsarm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ayaan/URC/URC/build/interbotix_xsarm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ayaan/URC/URC/install/interbotix_xsarm_control', 'merge_install': False, 'path': '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_control', 'symlink_install': False, 'test_result_base': None}
+[0.182s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.183s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.184s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk' with build type 'ament_cmake'
+[0.184s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk'
+[0.185s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.185s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.185s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.189s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs' with build type 'ament_cmake'
+[0.189s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs'
+[0.189s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.189s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.192s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_common_modules' with build type 'ament_python'
+[0.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_common_modules', 'ament_prefix_path')
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/ament_prefix_path.ps1'
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/ament_prefix_path.dsv'
+[0.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/ament_prefix_path.sh'
+[0.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.195s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/IMU_control' with build type 'ament_python'
+[0.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('IMU_control', 'ament_prefix_path')
+[0.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/ament_prefix_path.ps1'
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/ament_prefix_path.dsv'
+[0.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/ament_prefix_path.sh'
+[0.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.199s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces' with build type 'ament_cmake'
+[0.199s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces'
+[0.199s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.199s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.201s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics' with build type 'ament_python'
+[0.201s] Level 1:colcon.colcon_core.shell:create_environment_hook('modern_robotics', 'ament_prefix_path')
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/ament_prefix_path.ps1'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/ament_prefix_path.dsv'
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/ament_prefix_path.sh'
+[0.202s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.202s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver' with build type 'ament_cmake'
+[0.205s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver'
+[0.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_sdk -- -j16 -l16
+[0.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/interbotix_xs_msgs -- -j16 -l16
+[0.387s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_common_modules'
+[0.387s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.387s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.538s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/IMU_control'
+[0.539s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces -- -j16 -l16
+[0.661s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics'
+[0.661s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.661s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_sdk -- -j16 -l16
+[0.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_sdk
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/interbotix_xs_msgs -- -j16 -l16
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/interbotix_xs_msgs
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/receiver
+[0.767s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_sdk
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk' for CMake module files
+[0.769s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk' for CMake config files
+[0.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.769s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.770s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib'
+[0.770s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/bin'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.771s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages'
+[0.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'pythonpath')
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.ps1'
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.dsv'
+[0.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.sh'
+[0.772s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/bin'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.772s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.773s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.773s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk)
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk' for CMake module files
+[0.774s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk' for CMake config files
+[0.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'cmake_prefix_path')
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.ps1'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.dsv'
+[0.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/cmake_prefix_path.sh'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib'
+[0.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'ld_library_path_lib')
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.ps1'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/ld_library_path_lib.sh'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/bin'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib/pkgconfig/dynamixel_sdk.pc'
+[0.775s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages'
+[0.775s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk', 'pythonpath')
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.dsv'
+[0.776s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/hook/pythonpath.sh'
+[0.776s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk/bin'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.ps1'
+[0.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.sh'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.bash'
+[0.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.zsh'
+[0.777s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_sdk/share/colcon-core/packages/dynamixel_sdk)
+[0.777s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench' with build type 'ament_cmake'
+[0.777s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench'
+[0.778s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.778s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.785s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox -- -j16 -l16
+[0.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces -- -j16 -l16
+[0.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces
+[0.798s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interbotix_xs_msgs)
+[0.799s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs' for CMake module files
+[0.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/interbotix_xs_msgs
+[0.804s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs' for CMake config files
+[0.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'cmake_prefix_path')
+[0.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.ps1'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.dsv'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.sh'
+[0.805s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib'
+[0.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'ld_library_path_lib')
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.ps1'
+[0.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.dsv'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.sh'
+[0.806s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/bin'
+[0.806s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/pkgconfig/interbotix_xs_msgs.pc'
+[0.806s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/python3.12/site-packages'
+[0.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'pythonpath')
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.ps1'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.dsv'
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.sh'
+[0.807s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/bin'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.ps1'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.dsv'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.sh'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.bash'
+[0.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.zsh'
+[0.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/colcon-core/packages/interbotix_xs_msgs)
+[0.808s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interbotix_xs_msgs)
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs' for CMake module files
+[0.808s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs' for CMake config files
+[0.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'cmake_prefix_path')
+[0.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.ps1'
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.dsv'
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/cmake_prefix_path.sh'
+[0.809s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib'
+[0.809s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'ld_library_path_lib')
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.ps1'
+[0.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.dsv'
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/ld_library_path_lib.sh'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/bin'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/pkgconfig/interbotix_xs_msgs.pc'
+[0.810s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/python3.12/site-packages'
+[0.810s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_msgs', 'pythonpath')
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.ps1'
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.dsv'
+[0.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/hook/pythonpath.sh'
+[0.811s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_msgs/bin'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.ps1'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.dsv'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.sh'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.bash'
+[0.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/interbotix_xs_msgs/package.zsh'
+[0.812s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/interbotix_xs_msgs/share/colcon-core/packages/interbotix_xs_msgs)
+[0.835s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[0.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces
+[0.836s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[0.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[0.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib'
+[0.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages'
+[0.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/bin'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[0.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[0.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_sdk_custom_interfaces)
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces' for CMake module files
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces' for CMake config files
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'cmake_prefix_path')
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.ps1'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.dsv'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/cmake_prefix_path.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib'
+[0.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'ld_library_path_lib')
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.ps1'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.dsv'
+[0.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/ld_library_path_lib.sh'
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/bin'
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib/pkgconfig/dynamixel_sdk_custom_interfaces.pc'
+[0.847s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/lib/python3.12/site-packages'
+[0.847s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_sdk_custom_interfaces', 'pythonpath')
+[0.847s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.ps1'
+[0.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.dsv'
+[0.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/hook/pythonpath.sh'
+[0.849s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/bin'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.ps1'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.dsv'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.sh'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.bash'
+[0.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/package.zsh'
+[0.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces/share/colcon-core/packages/dynamixel_sdk_custom_interfaces)
+[1.096s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/IMU_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/ayaan/URC/URC/build/IMU_control/build install --record /home/ayaan/URC/URC/build/IMU_control/install.log --single-version-externally-managed install_data
+[1.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_common_modules': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/interbotix_common_modules/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/interbotix_common_modules build --build-base /home/ayaan/URC/URC/build/interbotix_common_modules/build install --record /home/ayaan/URC/URC/build/interbotix_common_modules/install.log --single-version-externally-managed install_data
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox -- -j16 -l16
+[1.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox
+[1.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_toolbox)
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox' for CMake module files
+[1.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox' for CMake config files
+[1.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'cmake_prefix_path')
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.ps1'
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.sh'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib'
+[1.133s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'ld_library_path_lib')
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.dsv'
+[1.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.sh'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/bin'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/pkgconfig/dynamixel_workbench_toolbox.pc'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/python3.12/site-packages'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/bin'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.sh'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.bash'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.zsh'
+[1.136s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/colcon-core/packages/dynamixel_workbench_toolbox)
+[1.136s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dynamixel_workbench_toolbox)
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox' for CMake module files
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox' for CMake config files
+[1.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'cmake_prefix_path')
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.ps1'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.dsv'
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/cmake_prefix_path.sh'
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib'
+[1.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('dynamixel_workbench_toolbox', 'ld_library_path_lib')
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.dsv'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/hook/ld_library_path_lib.sh'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/bin'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/pkgconfig/dynamixel_workbench_toolbox.pc'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/python3.12/site-packages'
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/bin'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.sh'
+[1.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.bash'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.zsh'
+[1.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/share/colcon-core/packages/dynamixel_workbench_toolbox)
+[1.141s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver' with build type 'ament_cmake'
+[1.141s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver'
+[1.141s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.141s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/ayaan/URC/URC/build/modern_robotics/build install --record /home/ayaan/URC/URC/build/modern_robotics/install.log --single-version-externally-managed install_data
+[1.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_driver': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/interbotix_xs_driver
+[1.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/receiver
+[1.187s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[1.397s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules' for CMake module files
+[1.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_common_modules' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/interbotix_common_modules/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/interbotix_common_modules/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/interbotix_common_modules build --build-base /home/ayaan/URC/URC/build/interbotix_common_modules/build install --record /home/ayaan/URC/URC/build/interbotix_common_modules/install.log --single-version-externally-managed install_data
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules' for CMake config files
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules/lib'
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules/bin'
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules/lib/pkgconfig/interbotix_common_modules.pc'
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules/lib/python3.12/site-packages'
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_common_modules', 'pythonpath')
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/pythonpath.ps1'
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/pythonpath.dsv'
+[1.399s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/hook/pythonpath.sh'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_common_modules/bin'
+[1.400s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interbotix_common_modules)
+[1.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/package.ps1'
+[1.400s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/package.dsv'
+[1.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/package.sh'
+[1.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/package.bash'
+[1.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_common_modules/share/interbotix_common_modules/package.zsh'
+[1.401s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/interbotix_common_modules/share/colcon-core/packages/interbotix_common_modules)
+[1.402s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control' for CMake module files
+[1.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/IMU_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/ayaan/URC/URC/build/IMU_control/build install --record /home/ayaan/URC/URC/build/IMU_control/install.log --single-version-externally-managed install_data
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control' for CMake config files
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control/lib'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control/bin'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control/lib/pkgconfig/IMU_control.pc'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control/lib/python3.12/site-packages'
+[1.403s] Level 1:colcon.colcon_core.shell:create_environment_hook('IMU_control', 'pythonpath')
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/pythonpath.ps1'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/pythonpath.dsv'
+[1.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/hook/pythonpath.sh'
+[1.404s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/IMU_control/bin'
+[1.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(IMU_control)
+[1.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/package.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/package.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/package.sh'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/package.bash'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/IMU_control/share/IMU_control/package.zsh'
+[1.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/IMU_control/share/colcon-core/packages/IMU_control)
+[1.443s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics' for CMake module files
+[1.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/ayaan/URC/URC/build/modern_robotics/build install --record /home/ayaan/URC/URC/build/modern_robotics/install.log --single-version-externally-managed install_data
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics' for CMake config files
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics/lib'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics/bin'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics/lib/pkgconfig/modern_robotics.pc'
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages'
+[1.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('modern_robotics', 'pythonpath')
+[1.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/pythonpath.ps1'
+[1.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/pythonpath.dsv'
+[1.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/hook/pythonpath.sh'
+[1.446s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/modern_robotics/bin'
+[1.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(modern_robotics)
+[1.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/package.ps1'
+[1.446s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/package.dsv'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/package.sh'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/package.bash'
+[1.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/modern_robotics/share/modern_robotics/package.zsh'
+[1.447s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/modern_robotics/share/colcon-core/packages/modern_robotics)
+[1.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_driver' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/interbotix_xs_driver
+[1.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_driver': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ayaan/URC/URC/build/interbotix_xs_driver -- -j16 -l16
+[3.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_driver' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ayaan/URC/URC/build/interbotix_xs_driver -- -j16 -l16
+[3.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_driver': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ayaan/URC/URC/build/interbotix_xs_driver
+[3.324s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interbotix_xs_driver)
+[3.324s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver' for CMake module files
+[3.325s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_driver' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ayaan/URC/URC/build/interbotix_xs_driver
+[3.325s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver' for CMake config files
+[3.325s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_driver', 'cmake_prefix_path')
+[3.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.ps1'
+[3.326s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.dsv'
+[3.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.sh'
+[3.326s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib'
+[3.326s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_driver', 'ld_library_path_lib')
+[3.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.ps1'
+[3.327s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.dsv'
+[3.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.sh'
+[3.327s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/bin'
+[3.327s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib/pkgconfig/interbotix_xs_driver.pc'
+[3.327s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib/python3.12/site-packages'
+[3.328s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/bin'
+[3.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.ps1'
+[3.328s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.dsv'
+[3.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.sh'
+[3.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.bash'
+[3.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.zsh'
+[3.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/interbotix_xs_driver/share/colcon-core/packages/interbotix_xs_driver)
+[3.330s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interbotix_xs_driver)
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver' for CMake module files
+[3.330s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver' for CMake config files
+[3.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_driver', 'cmake_prefix_path')
+[3.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.ps1'
+[3.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.dsv'
+[3.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/cmake_prefix_path.sh'
+[3.331s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib'
+[3.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('interbotix_xs_driver', 'ld_library_path_lib')
+[3.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.ps1'
+[3.332s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.dsv'
+[3.332s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/hook/ld_library_path_lib.sh'
+[3.332s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/bin'
+[3.332s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib/pkgconfig/interbotix_xs_driver.pc'
+[3.332s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/lib/python3.12/site-packages'
+[3.332s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/interbotix_xs_driver/bin'
+[3.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.ps1'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.dsv'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.sh'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.bash'
+[3.333s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.zsh'
+[3.333s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/interbotix_xs_driver/share/colcon-core/packages/interbotix_xs_driver)
+[3.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk' with build type 'ament_cmake'
+[3.333s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk'
+[3.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_sdk': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver/lib:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/python3.12/site-packages:/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/interbotix_xs_sdk
+[4.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/interbotix_xs_sdk' returned '0': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver/lib:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/python3.12/site-packages:/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/interbotix_xs_sdk
+[4.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/interbotix_xs_sdk': AMENT_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox:/home/ayaan/URC/URC/install/interbotix_xs_msgs:/home/ayaan/URC/URC/install/dynamixel_sdk:/home/ayaan/imprimis/imprimis_ws/install/umx_driver:/home/ayaan/imprimis/imprimis_ws/install/imprimis_hardware_platform:/home/ayaan/imprimis/imprimis_ws/install/serial:/home/ayaan/imprimis/imprimis_ws/install/scanmatcher:/home/ayaan/imprimis/imprimis_ws/install/graph_based_slam:/home/ayaan/imprimis/imprimis_ws/install/ndt_omp_ros2:/home/ayaan/imprimis/imprimis_ws/install/lidarslam_msgs:/home/ayaan/imprimis/imprimis_ws/install/imprimis_navigation:/home/ayaan/imprimis/imprimis_ws/install/imprimis_description:/home/ayaan/ros2_ws/install/turtlesim:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ayaan/URC/URC/install/interbotix_xs_driver/lib:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/python3.12/site-packages:/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ayaan/URC/URC/build/interbotix_xs_sdk -- -j16 -l16
+[5.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[5.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver
+[5.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver
+[5.915s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(receiver)
+[5.915s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver' for CMake module files
+[5.915s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver' for CMake config files
+[5.916s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver/bin'
+[5.916s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver/lib/pkgconfig/receiver.pc'
+[5.916s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver/lib/python3.12/site-packages'
+[5.916s] Level 1:colcon.colcon_core.environment:checking '/home/ayaan/URC/URC/install/receiver/bin'
+[5.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/receiver/share/receiver/package.ps1'
+[5.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ayaan/URC/URC/install/receiver/share/receiver/package.dsv'
+[5.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/receiver/share/receiver/package.sh'
+[5.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/receiver/share/receiver/package.bash'
+[5.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/ayaan/URC/URC/install/receiver/share/receiver/package.zsh'
+[5.918s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ayaan/URC/URC/install/receiver/share/colcon-core/packages/receiver)
+[14.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.586s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.587s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[14.587s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.591s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.591s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.591s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.599s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ayaan/URC/URC/install/local_setup.ps1'
+[14.601s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ayaan/URC/URC/install/_local_setup_util_ps1.py'
+[14.601s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ayaan/URC/URC/install/setup.ps1'
+[14.602s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ayaan/URC/URC/install/local_setup.sh'
+[14.602s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ayaan/URC/URC/install/_local_setup_util_sh.py'
+[14.602s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ayaan/URC/URC/install/setup.sh'
+[14.603s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ayaan/URC/URC/install/local_setup.bash'
+[14.603s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ayaan/URC/URC/install/setup.bash'
+[14.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ayaan/URC/URC/install/local_setup.zsh'
+[14.604s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ayaan/URC/URC/install/setup.zsh'

@@ -13,6 +13,18 @@ Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
 uint8_t receiverMac[6] = {0xC8, 0xF0, 0x9E, 0x50, 0x75, 0x3D};
 esp_now_peer_info_t slave;
 
+
+
+
+//micro ros wifi connection
+IPAddress agent_ip(192, 168, 1, 113); //this is the pi's Ip address
+size_t agent_port = 8888;
+
+char ssid[] = "WIFI_SSID";
+char psk[]= "WIFI_PSK";
+
+set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
+
 //slave.channel = CHANNEL;
 
 struct ImuArmData {
@@ -52,8 +64,8 @@ void readIMU(Adafruit_BNO055 &sensor, ImuArmData &data) {
   data.d10 = 10.0;
 }
 
-void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status){
-  Serial.print("I sent my data to--> ");
+//void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status){
+ // Serial.print("I sent my data to--> ");
 
  // Serial.println(data);
 }
@@ -105,7 +117,7 @@ void setup() {
   memcpy(slave.peer_addr, receiverMac, 6);
   slave.channel = CHANNEL;
   slave.encrypt = 0;        
-  Serial.println(WiFi.macAddress());
+  //Serial.println(WiFi.macAddress());
 
   //check for IMU
   if (!bno.begin()) {

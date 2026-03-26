@@ -1,0 +1,37 @@
+[0.479s] Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/receiver
+[0.512s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.671s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.703s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.712s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.722s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.735s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.791s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.792s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.833s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.872s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.905s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.965s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.965s] -- Configured cppcheck include dirs: 
+[0.965s] -- Configured cppcheck exclude dirs and/or files: 
+[0.965s] -- Added test 'lint_cmake' to check CMake code style
+[0.965s] -- Added test 'uncrustify' to check C / C++ code style
+[0.965s] -- Configured uncrustify additional arguments: 
+[0.965s] -- Added test 'xmllint' to check XML markup files
+[0.966s] -- Configuring done (0.5s)
+[0.972s] -- Generating done (0.0s)
+[0.974s] -- Build files have been written to: /home/ayaan/URC/URC/build/receiver
+[0.981s] Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/URC/install/receiver
+[0.982s] Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[1.020s] [ 50%] [32mBuilding CXX object CMakeFiles/receive.dir/src/receive.cpp.o[0m
+[5.485s] [100%] [32m[1mLinking CXX executable receive[0m
+[5.688s] [100%] Built target receive
+[5.699s] Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[5.700s] Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver
+[5.708s] -- Install configuration: ""
+[5.708s] [31mCMake Error at cmake_install.cmake:46 (file):
+[5.708s]   file INSTALL cannot find
+[5.708s]   "/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver/launch": No such file
+[5.709s]   or directory.
+[5.709s] 
+[5.709s] [0m
+[5.709s] Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver

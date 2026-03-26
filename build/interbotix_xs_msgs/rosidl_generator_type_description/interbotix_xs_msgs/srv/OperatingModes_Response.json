@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "interbotix_xs_msgs/srv/OperatingModes_Response",
+      "fields": [
+        {
+          "name": "structure_needs_at_least_one_member",
+          "type": {
+            "type_id": 3,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "interbotix_xs_msgs/srv/OperatingModes_Response",
+      "hash_string": "RIHS01_221f5d5418f7bb2fc4503681b0b997f908c25f50dad3abf4c1c599f075d4dc05"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver/launch": No such file
+  or directory.
+
+[0m

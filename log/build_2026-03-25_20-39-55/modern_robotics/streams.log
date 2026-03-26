@@ -1,0 +1,19 @@
+[0.851s] Invoking command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/ayaan/URC/URC/build/modern_robotics/build install --record /home/ayaan/URC/URC/build/modern_robotics/install.log --single-version-externally-managed install_data
+[0.989s] running egg_info
+[0.997s] writing ../../../build/modern_robotics/modern_robotics.egg-info/PKG-INFO
+[0.997s] writing dependency_links to ../../../build/modern_robotics/modern_robotics.egg-info/dependency_links.txt
+[0.997s] writing requirements to ../../../build/modern_robotics/modern_robotics.egg-info/requires.txt
+[0.997s] writing top-level names to ../../../build/modern_robotics/modern_robotics.egg-info/top_level.txt
+[1.015s] reading manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[1.015s] writing manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[1.015s] running build
+[1.015s] running build_py
+[1.016s] running install
+[1.019s] running install_lib
+[1.028s] running install_data
+[1.028s] running install_egg_info
+[1.038s] removing '/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics-0.0.0-py3.12.egg-info' (and everything under it)
+[1.038s] Copying ../../../build/modern_robotics/modern_robotics.egg-info to /home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics-0.0.0-py3.12.egg-info
+[1.038s] running install_scripts
+[1.102s] writing list of installed files to '/home/ayaan/URC/URC/build/modern_robotics/install.log'
+[1.153s] Invoked command in '/home/ayaan/URC/URC/urc_ws_interbotix/src/modern_robotics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/ayaan/URC/URC/build/modern_robotics/build install --record /home/ayaan/URC/URC/build/modern_robotics/install.log --single-version-externally-managed install_data

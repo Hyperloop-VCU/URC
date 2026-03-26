@@ -1,0 +1,2 @@
+[console_scripts]
+IMU_control = IMU_control.main:main
