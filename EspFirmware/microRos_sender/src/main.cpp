@@ -10,7 +10,7 @@
 
 //declarations
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
-Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
+//Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
 
 
 
@@ -38,6 +38,7 @@ rcl_node_t node;
 void error_loop() {
   while(1) {
     delay(100);
+    printf("You are in error loop hell");
   }
 }
  
@@ -56,25 +57,28 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
 //pi ssid is pispot, password is pi123456
 void setup() {
   Serial.begin(115200);
-  Wire.begin(8, 9);
+  Wire.begin(21, 22); //8,9
   //micro ros udp wifi connection with pi
   IPAddress agent_ip(10, 42, 0, 1); //this is the pi's Ip address
   size_t agent_port = 8888;
   char ssid[] = "pispot";
   char psk[]= "pi123456";
+  Serial.println("Connecting to WiFi...");
   set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
+  Serial.println("Connected!");
+ 
 
 
 
 //Check for Both bno
-/*
+
   if (!bno.begin()) {
     Serial.println("BNO055 not found");
     while (1);
   }
 
   bno.setExtCrystalUse(true);
-
+/*
    if (!bno2.begin()) {
     Serial.println("BNO055 2 not found");
     while (1);
@@ -121,14 +125,7 @@ void setup() {
 
 
 void loop() {
-  
-armMsg1.linear_acceleration.x = 1.0;
-armMsg1.linear_acceleration.y = 2.0;
-armMsg1.linear_acceleration.z = 3.0;
-armMsg1.angular_velocity.x = 0.1;
-armMsg1.angular_velocity.y = 0.2;
-armMsg1.angular_velocity.z = 0.3;
-//readIMU(bno,armMsg1); uncomment if you have bno connected
+readIMU(bno,armMsg1);// uncomment if you have bno connected
 //readIMU(bno2,armMsg2);
 
 

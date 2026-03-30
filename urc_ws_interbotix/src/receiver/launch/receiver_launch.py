@@ -12,11 +12,11 @@ def generate_launch_description():
     declared_arguments = []
 
     agent = ExecuteProcess(
-        cmd = ['ros2', 'run', 'micro_ros_agent', 'micro_ros_agent', 'udp4', '--port', '8888'],
+        cmd = ['sudo', 'docker', 'run', '--rm', '--net=host', 'microros/micro-ros-agent:jazzy', 'udp4', '--port', '8888'],
         output='screen'
     )
 
-    receiver_node = Node(
+    receiver_node = Node(\
 
         package="receiver",
         executable = "receive",

@@ -1,0 +1,24 @@
+[2.332s] Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[2.556s] [100%] Built target receive
+[2.587s] Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/URC/build/receiver -- -j16 -l16
+[2.592s] Invoking command in '/home/ayaan/URC/URC/build/receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver
+[2.617s] -- Install configuration: ""
+[2.618s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/launch
+[2.618s] -- Installing: /home/ayaan/URC/URC/install/receiver/share/receiver/launch/receiver_launch.py
+[2.619s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/lib/receiver/receive
+[2.619s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/ament_index/resource_index/package_run_dependencies/receiver
+[2.619s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/ament_index/resource_index/parent_prefix_path/receiver
+[2.620s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/environment/ament_prefix_path.sh
+[2.620s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/environment/ament_prefix_path.dsv
+[2.620s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/environment/path.sh
+[2.621s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/environment/path.dsv
+[2.621s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/local_setup.bash
+[2.621s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/local_setup.sh
+[2.622s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/local_setup.zsh
+[2.622s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/local_setup.dsv
+[2.622s] -- Installing: /home/ayaan/URC/URC/install/receiver/share/receiver/package.dsv
+[2.623s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/ament_index/resource_index/packages/receiver
+[2.623s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/cmake/receiverConfig.cmake
+[2.623s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/cmake/receiverConfig-version.cmake
+[2.623s] -- Up-to-date: /home/ayaan/URC/URC/install/receiver/share/receiver/package.xml
+[2.627s] Invoked command in '/home/ayaan/URC/URC/build/receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/URC/build/receiver
