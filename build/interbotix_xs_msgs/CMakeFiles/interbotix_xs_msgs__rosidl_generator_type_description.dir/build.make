@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 # Utility rule file for interbotix_xs_msgs__rosidl_generator_type_description.
 
@@ -97,8 +97,8 @@ rosidl_generator_type_description/interbotix_xs_msgs/msg/ArmJoy.json: rosidl_ada
 rosidl_generator_type_description/interbotix_xs_msgs/msg/ArmJoy.json: rosidl_adapter/interbotix_xs_msgs/srv/RegisterValues.idl
 rosidl_generator_type_description/interbotix_xs_msgs/msg/ArmJoy.json: rosidl_adapter/interbotix_xs_msgs/srv/RobotInfo.idl
 rosidl_generator_type_description/interbotix_xs_msgs/msg/ArmJoy.json: rosidl_adapter/interbotix_xs_msgs/srv/TorqueEnable.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/ayaan/URC/URC/build/interbotix_xs_msgs/rosidl_generator_type_description__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/admin1/URC/build/interbotix_xs_msgs/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/interbotix_xs_msgs/msg/HexJoy.json: rosidl_generator_type_description/interbotix_xs_msgs/msg/ArmJoy.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/interbotix_xs_msgs/msg/HexJoy.json
@@ -166,6 +166,6 @@ CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/clean:
 .PHONY : CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/interbotix_xs_msgs__rosidl_generator_type_description.dir/depend
 

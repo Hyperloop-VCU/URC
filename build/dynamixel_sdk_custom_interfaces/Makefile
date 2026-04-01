@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/admin1/URC/build/dynamixel_sdk_custom_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/CMakeFiles /home/admin1/URC/build/dynamixel_sdk_custom_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -415,7 +415,7 @@ dynamixel_sdk_custom_interfaces__py: cmake_check_build_system
 
 # fast build rule for target.
 dynamixel_sdk_custom_interfaces__py/fast:
-	$(MAKE) $(MAKESILENT) -f /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build.make /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build
+	$(MAKE) $(MAKESILENT) -f /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build.make /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py/CMakeFiles/dynamixel_sdk_custom_interfaces__py.dir/build
 .PHONY : dynamixel_sdk_custom_interfaces__py/fast
 
 rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.o: rosidl_generator_c/dynamixel_sdk_custom_interfaces/msg/detail/set_position__description.c.o

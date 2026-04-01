@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 # Utility rule file for ament_cmake_python_copy_interbotix_xs_msgs.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/compiler_depen
 include CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs:
-	/usr/bin/cmake -E copy_directory /home/ayaan/URC/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/ament_cmake_python/interbotix_xs_msgs/interbotix_xs_msgs
+	/usr/bin/cmake -E copy_directory /home/admin1/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/ament_cmake_python/interbotix_xs_msgs/interbotix_xs_msgs
 
 ament_cmake_python_copy_interbotix_xs_msgs: CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs
 ament_cmake_python_copy_interbotix_xs_msgs: CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ament_cmake_python_copy_interbotix_xs_msgs.dir/depend
 

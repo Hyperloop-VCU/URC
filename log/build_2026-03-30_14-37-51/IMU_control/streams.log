@@ -1,0 +1,37 @@
+[11.833s] Invoking command in '/home/admin1/URC/urc_ws_interbotix/src/IMU_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/admin1/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin1/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/admin1/URC/build/IMU_control/build install --record /home/admin1/URC/build/IMU_control/install.log --single-version-externally-managed install_data
+[16.495s] running egg_info
+[16.499s] creating ../../../build/IMU_control/IMU_control.egg-info
+[17.096s] writing ../../../build/IMU_control/IMU_control.egg-info/PKG-INFO
+[17.106s] writing dependency_links to ../../../build/IMU_control/IMU_control.egg-info/dependency_links.txt
+[17.118s] writing entry points to ../../../build/IMU_control/IMU_control.egg-info/entry_points.txt
+[17.123s] writing requirements to ../../../build/IMU_control/IMU_control.egg-info/requires.txt
+[17.124s] writing top-level names to ../../../build/IMU_control/IMU_control.egg-info/top_level.txt
+[17.143s] writing manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[18.259s] reading manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[18.287s] writing manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[18.288s] running build
+[18.303s] running build_py
+[18.305s] creating /home/admin1/URC/build/IMU_control/build
+[18.320s] creating /home/admin1/URC/build/IMU_control/build/lib
+[18.326s] creating /home/admin1/URC/build/IMU_control/build/lib/IMU_control
+[18.343s] copying IMU_control/__init__.py -> /home/admin1/URC/build/IMU_control/build/lib/IMU_control
+[18.344s] copying IMU_control/main.py -> /home/admin1/URC/build/IMU_control/build/lib/IMU_control
+[18.373s] running install
+[18.529s] running install_lib
+[19.158s] creating /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[19.160s] copying /home/admin1/URC/build/IMU_control/build/lib/IMU_control/__init__.py -> /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[19.175s] copying /home/admin1/URC/build/IMU_control/build/lib/IMU_control/main.py -> /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[19.195s] byte-compiling /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control/__init__.py to __init__.cpython-312.pyc
+[19.195s] byte-compiling /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control/main.py to main.cpython-312.pyc
+[19.199s] running install_data
+[19.200s] creating /home/admin1/URC/install/IMU_control/share/ament_index
+[19.200s] creating /home/admin1/URC/install/IMU_control/share/ament_index/resource_index
+[19.211s] creating /home/admin1/URC/install/IMU_control/share/ament_index/resource_index/packages
+[19.212s] copying resource/IMU_control -> /home/admin1/URC/install/IMU_control/share/ament_index/resource_index/packages
+[19.212s] copying package.xml -> /home/admin1/URC/install/IMU_control/share/IMU_control
+[19.213s] running install_egg_info
+[19.814s] Copying ../../../build/IMU_control/IMU_control.egg-info to /home/admin1/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control-0.0.0-py3.12.egg-info
+[19.848s] running install_scripts
+[24.063s] Installing IMU_control script to /home/admin1/URC/install/IMU_control/lib/IMU_control
+[24.078s] writing list of installed files to '/home/admin1/URC/build/IMU_control/install.log'
+[24.822s] Invoked command in '/home/admin1/URC/urc_ws_interbotix/src/IMU_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/admin1/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin1/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/admin1/URC/build/IMU_control/build install --record /home/admin1/URC/build/IMU_control/install.log --single-version-externally-managed install_data

@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk
+# Install script for directory: /home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/dynamixel_sdk")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/dynamixel_sdk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/libdynamixel_sdk.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/admin1/URC/build/dynamixel_sdk/libdynamixel_sdk.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libdynamixel_sdk.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -66,46 +66,46 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/control_table" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk/control_table/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/control_table" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk/control_table/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/pythonpath.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info" TYPE DIRECTORY FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_python/dynamixel_sdk/dynamixel_sdk.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk/src/dynamixel_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_sdk" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk/src/dynamixel_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk"
+        "/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk"
       )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_python/dynamixel_easy_sdk/dynamixel_easy_sdk.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info" TYPE DIRECTORY FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_python/dynamixel_easy_sdk/dynamixel_easy_sdk.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk/src/dynamixel_easy_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.12/site-packages/dynamixel_easy_sdk" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk/src/dynamixel_easy_sdk/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
         "/usr/bin/python3" "-m" "compileall"
-        "/home/ayaan/URC/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk"
+        "/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk"
       )
 endif()
 
@@ -114,15 +114,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/library_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/library_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -130,7 +130,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -138,38 +138,38 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/packages/dynamixel_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_index/share/ament_index/resource_index/packages/dynamixel_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake"
-         "/home/ayaan/URC/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport.cmake")
+         "/home/admin1/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake/dynamixel_sdkExport-*.cmake")
       if(_cmake_old_config_files)
@@ -182,33 +182,33 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/CMakeFiles/Export/9c527f08dbce30453c1a89e61256c9e7/dynamixel_sdkExport-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk/cmake" TYPE FILE FILES
-    "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig.cmake"
-    "/home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig-version.cmake"
+    "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig.cmake"
+    "/home/admin1/URC/build/dynamixel_sdk/ament_cmake_core/dynamixel_sdkConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dynamixel_sdk" TYPE FILE FILES "/home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -219,5 +219,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ayaan/URC/URC/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/admin1/URC/build/dynamixel_sdk/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

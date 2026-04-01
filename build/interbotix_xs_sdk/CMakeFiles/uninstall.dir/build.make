@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_sdk
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_sdk
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

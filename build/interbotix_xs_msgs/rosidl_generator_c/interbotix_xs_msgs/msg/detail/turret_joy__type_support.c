@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "interbotix_xs_msgs/msg/detail/turret_joy__struct.h"
-#include "interbotix_xs_msgs/msg/detail/turret_joy__functions.h"
 #include "interbotix_xs_msgs/msg/detail/turret_joy__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "interbotix_xs_msgs/msg/detail/turret_joy__functions.h"
 
 #ifdef __cplusplus
 extern "C"

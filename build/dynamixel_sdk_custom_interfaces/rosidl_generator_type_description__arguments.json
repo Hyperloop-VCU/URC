@@ -1,9 +1,9 @@
 {
   "package_name": "dynamixel_sdk_custom_interfaces",
-  "output_dir": "/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/rosidl_generator_type_description/dynamixel_sdk_custom_interfaces",
+  "output_dir": "/home/admin1/URC/build/dynamixel_sdk_custom_interfaces/rosidl_generator_type_description/dynamixel_sdk_custom_interfaces",
   "idl_tuples": [
-    "/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetPosition.idl",
-    "/home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/GetPosition.idl"
+    "/home/admin1/URC/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetPosition.idl",
+    "/home/admin1/URC/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/GetPosition.idl"
   ],
   "include_paths": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",

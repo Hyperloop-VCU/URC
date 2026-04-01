@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver
+# Install script for directory: /home/admin1/URC/urc_ws_interbotix/src/receiver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/receiver")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/receiver")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/receiver/launch")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -53,7 +53,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/receiver/receive"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/receiver" TYPE EXECUTABLE FILES "/home/ayaan/URC/URC/build/receiver/receive")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/receiver" TYPE EXECUTABLE FILES "/home/admin1/URC/build/receiver/receive")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/receiver/receive" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/receiver/receive")
     file(RPATH_CHANGE
@@ -67,15 +67,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ayaan/URC/URC/build/receiver/CMakeFiles/receive.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/admin1/URC/build/receiver/CMakeFiles/receive.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/receiver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/receiver")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/receiver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/receiver")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,7 +83,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver/environment" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,42 +91,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver/environment" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ayaan/URC/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/packages/receiver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/admin1/URC/build/receiver/ament_cmake_index/share/ament_index/resource_index/packages/receiver")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver/cmake" TYPE FILE FILES
-    "/home/ayaan/URC/URC/build/receiver/ament_cmake_core/receiverConfig.cmake"
-    "/home/ayaan/URC/URC/build/receiver/ament_cmake_core/receiverConfig-version.cmake"
+    "/home/admin1/URC/build/receiver/ament_cmake_core/receiverConfig.cmake"
+    "/home/admin1/URC/build/receiver/ament_cmake_core/receiverConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/receiver" TYPE FILE FILES "/home/admin1/URC/urc_ws_interbotix/src/receiver/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -137,5 +137,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ayaan/URC/URC/build/receiver/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/admin1/URC/build/receiver/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

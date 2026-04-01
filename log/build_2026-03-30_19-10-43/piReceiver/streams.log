@@ -1,0 +1,24 @@
+[0.162s] Invoking command in '/home/admin1/URC/build/piReceiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin1/URC/install/modern_robotics:/home/admin1/URC/install/interbotix_xs_modules:/home/admin1/URC/install/interbotix_common_modules:/home/admin1/URC/install/IMU_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/admin1/URC/build/piReceiver -- -j4 -l4
+[1.622s] [100%] Built target receive
+[5.165s] Invoked command in '/home/admin1/URC/build/piReceiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin1/URC/install/modern_robotics:/home/admin1/URC/install/interbotix_xs_modules:/home/admin1/URC/install/interbotix_common_modules:/home/admin1/URC/install/IMU_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/admin1/URC/build/piReceiver -- -j4 -l4
+[5.182s] Invoking command in '/home/admin1/URC/build/piReceiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin1/URC/install/modern_robotics:/home/admin1/URC/install/interbotix_xs_modules:/home/admin1/URC/install/interbotix_common_modules:/home/admin1/URC/install/IMU_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/admin1/URC/build/piReceiver
+[5.341s] -- Install configuration: ""
+[5.362s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/launch
+[5.363s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/launch/receiver_launch.py
+[5.363s] -- Up-to-date: /home/admin1/URC/install/piReceiver/lib/piReceiver/receive
+[5.364s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/package_run_dependencies/piReceiver
+[5.364s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/parent_prefix_path/piReceiver
+[5.374s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/ament_prefix_path.sh
+[5.379s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/ament_prefix_path.dsv
+[5.386s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/path.sh
+[5.392s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/path.dsv
+[5.392s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.bash
+[5.393s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.sh
+[5.397s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.zsh
+[5.417s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.dsv
+[5.418s] -- Installing: /home/admin1/URC/install/piReceiver/share/piReceiver/package.dsv
+[5.421s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/packages/piReceiver
+[5.421s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/cmake/piReceiverConfig.cmake
+[5.422s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/cmake/piReceiverConfig-version.cmake
+[5.429s] -- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/package.xml
+[5.796s] Invoked command in '/home/admin1/URC/build/piReceiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin1/URC/install/modern_robotics:/home/admin1/URC/install/interbotix_xs_modules:/home/admin1/URC/install/interbotix_common_modules:/home/admin1/URC/install/IMU_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/admin1/URC/build/piReceiver

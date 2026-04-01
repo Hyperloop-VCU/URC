@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/receiver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/receiver
+CMAKE_BINARY_DIR = /home/admin1/URC/build/receiver
 
 # Utility rule file for receiver_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/receiver_uninstall.dir/compiler_depend.make
 include CMakeFiles/receiver_uninstall.dir/progress.make
 
 CMakeFiles/receiver_uninstall:
-	/usr/bin/cmake -P /home/ayaan/URC/URC/build/receiver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/admin1/URC/build/receiver/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 receiver_uninstall: CMakeFiles/receiver_uninstall
 receiver_uninstall: CMakeFiles/receiver_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/receiver_uninstall.dir/clean:
 .PHONY : CMakeFiles/receiver_uninstall.dir/clean
 
 CMakeFiles/receiver_uninstall.dir/depend:
-	cd /home/ayaan/URC/URC/build/receiver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver /home/ayaan/URC/URC/urc_ws_interbotix/src/receiver /home/ayaan/URC/URC/build/receiver /home/ayaan/URC/URC/build/receiver /home/ayaan/URC/URC/build/receiver/CMakeFiles/receiver_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/receiver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/receiver /home/admin1/URC/urc_ws_interbotix/src/receiver /home/admin1/URC/build/receiver /home/admin1/URC/build/receiver /home/admin1/URC/build/receiver/CMakeFiles/receiver_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/receiver_uninstall.dir/depend
 

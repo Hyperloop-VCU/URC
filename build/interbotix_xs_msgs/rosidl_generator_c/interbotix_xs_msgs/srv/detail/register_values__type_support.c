@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "interbotix_xs_msgs/srv/detail/register_values__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "interbotix_xs_msgs/srv/detail/register_values__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "interbotix_xs_msgs/srv/detail/register_values__functions.h"
 
 #ifdef __cplusplus

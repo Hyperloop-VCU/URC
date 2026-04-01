@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ayaan/URC/URC/urc_ws_interbotix/src/receiver/src/receive.cpp" "CMakeFiles/receive.dir/src/receive.cpp.o" "gcc" "CMakeFiles/receive.dir/src/receive.cpp.o.d"
+  "/home/admin1/URC/urc_ws_interbotix/src/receiver/src/receive.cpp" "CMakeFiles/receive.dir/src/receive.cpp.o" "gcc" "CMakeFiles/receive.dir/src/receive.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

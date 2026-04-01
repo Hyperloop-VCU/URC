@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "interbotix_xs_msgs/msg/detail/joint_single_command__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "interbotix_xs_msgs/msg/detail/joint_single_command__type_support.h"
 #include "interbotix_xs_msgs/msg/detail/joint_single_command__functions.h"
+#include "interbotix_xs_msgs/msg/detail/joint_single_command__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "interbotix_xs_msgs/msg/detail/joint_single_command__struct.h"
 
 #ifdef __cplusplus
 extern "C"

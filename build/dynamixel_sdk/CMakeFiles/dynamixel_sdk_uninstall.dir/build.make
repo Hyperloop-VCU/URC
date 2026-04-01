@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/dynamixel_sdk
+CMAKE_BINARY_DIR = /home/admin1/URC/build/dynamixel_sdk
 
 # Utility rule file for dynamixel_sdk_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dynamixel_sdk_uninstall.dir/compiler_depend.make
 include CMakeFiles/dynamixel_sdk_uninstall.dir/progress.make
 
 CMakeFiles/dynamixel_sdk_uninstall:
-	/usr/bin/cmake -P /home/ayaan/URC/URC/build/dynamixel_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/admin1/URC/build/dynamixel_sdk/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dynamixel_sdk_uninstall: CMakeFiles/dynamixel_sdk_uninstall
 dynamixel_sdk_uninstall: CMakeFiles/dynamixel_sdk_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dynamixel_sdk_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_sdk_uninstall.dir/clean
 
 CMakeFiles/dynamixel_sdk_uninstall.dir/depend:
-	cd /home/ayaan/URC/URC/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel_sdk /home/ayaan/URC/URC/build/dynamixel_sdk /home/ayaan/URC/URC/build/dynamixel_sdk /home/ayaan/URC/URC/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/dynamixel_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk /home/admin1/URC/urc_ws_interbotix/src/dynamixel_sdk /home/admin1/URC/build/dynamixel_sdk /home/admin1/URC/build/dynamixel_sdk /home/admin1/URC/build/dynamixel_sdk/CMakeFiles/dynamixel_sdk_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dynamixel_sdk_uninstall.dir/depend
 

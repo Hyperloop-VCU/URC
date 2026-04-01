@@ -59,7 +59,7 @@ endif()
 add_library(dynamixel_sdk::dynamixel_sdk SHARED IMPORTED)
 
 set_target_properties(dynamixel_sdk::dynamixel_sdk PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "CONTROL_TABLE_PATH=\"/home/ayaan/URC/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table\""
+  INTERFACE_COMPILE_DEFINITIONS "CONTROL_TABLE_PATH=\"/home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table\""
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
 )
 

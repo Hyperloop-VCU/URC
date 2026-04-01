@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 # Utility rule file for interbotix_xs_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/interbotix_xs_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/interbotix_xs_msgs_uninstall.dir/progress.make
 
 CMakeFiles/interbotix_xs_msgs_uninstall:
-	/usr/bin/cmake -P /home/ayaan/URC/URC/build/interbotix_xs_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/admin1/URC/build/interbotix_xs_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 interbotix_xs_msgs_uninstall: CMakeFiles/interbotix_xs_msgs_uninstall
 interbotix_xs_msgs_uninstall: CMakeFiles/interbotix_xs_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/interbotix_xs_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/interbotix_xs_msgs_uninstall.dir/clean
 
 CMakeFiles/interbotix_xs_msgs_uninstall.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/interbotix_xs_msgs_uninstall.dir/depend
 

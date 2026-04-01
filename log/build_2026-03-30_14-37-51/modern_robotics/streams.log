@@ -1,0 +1,35 @@
+[14.616s] Invoking command in '/home/admin1/URC/urc_ws_interbotix/src/modern_robotics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/admin1/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/admin1/URC/build/modern_robotics/build install --record /home/admin1/URC/build/modern_robotics/install.log --single-version-externally-managed install_data
+[18.212s] running egg_info
+[18.213s] creating ../../../build/modern_robotics/modern_robotics.egg-info
+[18.483s] writing ../../../build/modern_robotics/modern_robotics.egg-info/PKG-INFO
+[18.496s] writing dependency_links to ../../../build/modern_robotics/modern_robotics.egg-info/dependency_links.txt
+[18.501s] writing requirements to ../../../build/modern_robotics/modern_robotics.egg-info/requires.txt
+[18.502s] writing top-level names to ../../../build/modern_robotics/modern_robotics.egg-info/top_level.txt
+[18.504s] writing manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[19.029s] reading manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[19.032s] writing manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[19.036s] running build
+[19.042s] running build_py
+[19.045s] creating /home/admin1/URC/build/modern_robotics/build
+[19.048s] creating /home/admin1/URC/build/modern_robotics/build/lib
+[19.054s] creating /home/admin1/URC/build/modern_robotics/build/lib/modern_robotics
+[19.059s] copying modern_robotics/__init__.py -> /home/admin1/URC/build/modern_robotics/build/lib/modern_robotics
+[19.060s] copying modern_robotics/core.py -> /home/admin1/URC/build/modern_robotics/build/lib/modern_robotics
+[19.065s] running install
+[19.104s] running install_lib
+[19.366s] creating /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics
+[19.367s] copying /home/admin1/URC/build/modern_robotics/build/lib/modern_robotics/__init__.py -> /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics
+[19.371s] copying /home/admin1/URC/build/modern_robotics/build/lib/modern_robotics/core.py -> /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics
+[19.373s] byte-compiling /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics/__init__.py to __init__.cpython-312.pyc
+[19.375s] byte-compiling /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics/core.py to core.cpython-312.pyc
+[19.425s] running install_data
+[19.427s] creating /home/admin1/URC/install/modern_robotics/share/ament_index
+[19.430s] creating /home/admin1/URC/install/modern_robotics/share/ament_index/resource_index
+[19.434s] creating /home/admin1/URC/install/modern_robotics/share/ament_index/resource_index/packages
+[19.435s] copying resource/modern_robotics -> /home/admin1/URC/install/modern_robotics/share/ament_index/resource_index/packages
+[19.436s] copying package.xml -> /home/admin1/URC/install/modern_robotics/share/modern_robotics
+[19.436s] running install_egg_info
+[19.702s] Copying ../../../build/modern_robotics/modern_robotics.egg-info to /home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages/modern_robotics-0.0.0-py3.12.egg-info
+[19.715s] running install_scripts
+[21.785s] writing list of installed files to '/home/admin1/URC/build/modern_robotics/install.log'
+[22.186s] Invoked command in '/home/admin1/URC/urc_ws_interbotix/src/modern_robotics' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/admin1/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin1/URC/install/modern_robotics/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/admin1/URC/build/modern_robotics/build install --record /home/admin1/URC/build/modern_robotics/install.log --single-version-externally-managed install_data

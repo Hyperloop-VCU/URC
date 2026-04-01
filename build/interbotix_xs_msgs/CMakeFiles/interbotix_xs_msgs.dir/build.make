@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 # Utility rule file for interbotix_xs_msgs.
 
@@ -66,20 +66,20 @@ include CMakeFiles/interbotix_xs_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/interbotix_xs_msgs.dir/progress.make
 
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/ArmJoy.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/HexJoy.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointGroupCommand.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointSingleCommand.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointTemps.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointTrajectoryCommand.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/LocobotJoy.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/TurretJoy.msg
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/MotorGains.srv
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/OperatingModes.srv
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/Reboot.srv
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/RegisterValues.srv
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/RobotInfo.srv
-CMakeFiles/interbotix_xs_msgs: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/TorqueEnable.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/ArmJoy.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/HexJoy.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointGroupCommand.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointSingleCommand.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointTemps.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/JointTrajectoryCommand.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/LocobotJoy.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/msg/TurretJoy.msg
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/MotorGains.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/OperatingModes.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/Reboot.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/RegisterValues.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/RobotInfo.srv
+CMakeFiles/interbotix_xs_msgs: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs/srv/TorqueEnable.srv
 CMakeFiles/interbotix_xs_msgs: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 CMakeFiles/interbotix_xs_msgs: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 CMakeFiles/interbotix_xs_msgs: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -129,6 +129,6 @@ CMakeFiles/interbotix_xs_msgs.dir/clean:
 .PHONY : CMakeFiles/interbotix_xs_msgs.dir/clean
 
 CMakeFiles/interbotix_xs_msgs.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles/interbotix_xs_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/interbotix_xs_msgs.dir/depend
 

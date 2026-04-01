@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_driver
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_driver
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles /home/ayaan/URC/URC/build/interbotix_xs_driver//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/interbotix_xs_driver/CMakeFiles /home/admin1/URC/build/interbotix_xs_driver//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/interbotix_xs_driver/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

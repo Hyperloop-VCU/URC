@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
+# Install script for directory: /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/dynamixel_sdk_custom_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/dynamixel_sdk_custom_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,10 @@
+/home/admin1/URC/build/piReceiver/CMakeFiles/uninstall.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/piReceiver_uninstall.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/receive.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/test.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/edit_cache.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/rebuild_cache.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/list_install_components.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/install.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/install/local.dir
+/home/admin1/URC/build/piReceiver/CMakeFiles/install/strip.dir

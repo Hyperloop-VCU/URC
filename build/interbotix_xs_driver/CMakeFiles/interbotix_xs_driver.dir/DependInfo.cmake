@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp" "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o" "gcc" "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o.d"
-  "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp" "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o" "gcc" "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o.d"
+  "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp" "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o" "gcc" "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o.d"
+  "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp" "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o" "gcc" "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

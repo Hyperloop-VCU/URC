@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp" "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o" "gcc" "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o.d"
-  "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp" "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o" "gcc" "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o.d"
+  "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp" "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o" "gcc" "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o.d"
+  "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp" "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o" "gcc" "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

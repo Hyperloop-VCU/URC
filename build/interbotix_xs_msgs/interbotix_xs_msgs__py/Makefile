@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py//CMakeFiles/progress.marks
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles 0
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py//CMakeFiles/progress.marks
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/clean
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,31 +158,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/preinstall
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/preinstall
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
-.PHONY : /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule:
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
+.PHONY : /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
 
 # Convenience name for target.
-interbotix_xs_msgs__py: /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
+interbotix_xs_msgs__py: /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/rule
 .PHONY : interbotix_xs_msgs__py
 
 # fast build rule for target.
 interbotix_xs_msgs__py/fast:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build.make /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(MAKE) $(MAKESILENT) -f /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build.make /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build
 .PHONY : interbotix_xs_msgs__py/fast
 
 # Help Target
@@ -210,6 +210,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

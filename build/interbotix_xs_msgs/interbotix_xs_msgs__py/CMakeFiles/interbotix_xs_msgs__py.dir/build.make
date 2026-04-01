@@ -53,52 +53,52 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_msgs
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_msgs
 
 # Utility rule file for interbotix_xs_msgs__py.
 
 # Include any custom commands dependencies for this target.
-include /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/compiler_depend.make
+include /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/compiler_depend.make
 
 # Include the progress variables for this target.
-include /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/progress.make
+include /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/progress.make
 
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_c.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_reboot.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_register_values.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/__init__.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/__init__.py
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_reboot_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_register_values_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info_s.c
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_c.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_reboot.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_register_values.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/__init__.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/__init__.py
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_reboot_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_register_values_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info_s.c
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c
 
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -196,8 +196,8 @@ rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesuppo
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ayaan/URC/URC/build/interbotix_xs_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/admin1/URC/build/interbotix_xs_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/admin1/URC/build/interbotix_xs_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -295,7 +295,7 @@ rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info_s.c: rosidl_generator_py/
 rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c
 
-interbotix_xs_msgs__py: /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py
+interbotix_xs_msgs__py: /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_c.c
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -329,18 +329,18 @@ interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info.p
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info_s.c
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable.py
 interbotix_xs_msgs__py: rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c
-interbotix_xs_msgs__py: /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build.make
+interbotix_xs_msgs__py: /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build.make
 .PHONY : interbotix_xs_msgs__py
 
 # Rule to build all files generated by this target.
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build: interbotix_xs_msgs__py
-.PHONY : /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build: interbotix_xs_msgs__py
+.PHONY : /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/build
 
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/clean:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xs_msgs__py.dir/cmake_clean.cmake
-.PHONY : /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/clean
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/clean:
+	cd /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/interbotix_xs_msgs__py.dir/cmake_clean.cmake
+.PHONY : /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/clean
 
-/home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py /home/ayaan/URC/URC/build/interbotix_xs_msgs /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
-.PHONY : /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/depend
+/home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/depend:
+	cd /home/admin1/URC/build/interbotix_xs_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py /home/admin1/URC/build/interbotix_xs_msgs /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/DependInfo.cmake "--color=$(COLOR)"
+.PHONY : /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py/CMakeFiles/interbotix_xs_msgs__py.dir/depend
 

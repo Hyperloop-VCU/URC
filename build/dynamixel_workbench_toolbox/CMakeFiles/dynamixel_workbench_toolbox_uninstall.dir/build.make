@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox
+CMAKE_BINARY_DIR = /home/admin1/URC/build/dynamixel_workbench_toolbox
 
 # Utility rule file for dynamixel_workbench_toolbox_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/compiler_depend.mak
 include CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/progress.make
 
 CMakeFiles/dynamixel_workbench_toolbox_uninstall:
-	/usr/bin/cmake -P /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/admin1/URC/build/dynamixel_workbench_toolbox/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 dynamixel_workbench_toolbox_uninstall: CMakeFiles/dynamixel_workbench_toolbox_uninstall
 dynamixel_workbench_toolbox_uninstall: CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/clean:
 .PHONY : CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/clean
 
 CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/depend:
-	cd /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench /home/ayaan/URC/URC/urc_ws_interbotix/src/dynamixel-workbench /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox /home/ayaan/URC/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/dynamixel_workbench_toolbox && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench /home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench /home/admin1/URC/build/dynamixel_workbench_toolbox /home/admin1/URC/build/dynamixel_workbench_toolbox /home/admin1/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dynamixel_workbench_toolbox_uninstall.dir/depend
 

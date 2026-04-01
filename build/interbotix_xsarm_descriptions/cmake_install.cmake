@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions
+# Install script for directory: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/interbotix_xsarm_descriptions")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/interbotix_xsarm_descriptions")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,19 +44,19 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/" TYPE DIRECTORY FILES
-    "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/urdf"
-    "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/launch"
-    "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/meshes"
-    "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/rviz"
+    "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/urdf"
+    "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/launch"
+    "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/meshes"
+    "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/rviz"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interbotix_xsarm_descriptions")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interbotix_xsarm_descriptions")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/interbotix_xsarm_descriptions")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/interbotix_xsarm_descriptions")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -64,7 +64,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/environment" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -72,42 +72,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/environment" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/packages/interbotix_xsarm_descriptions")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_index/share/ament_index/resource_index/packages/interbotix_xsarm_descriptions")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions/cmake" TYPE FILE FILES
-    "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_core/interbotix_xsarm_descriptionsConfig.cmake"
-    "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/ament_cmake_core/interbotix_xsarm_descriptionsConfig-version.cmake"
+    "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_core/interbotix_xsarm_descriptionsConfig.cmake"
+    "/home/admin1/URC/build/interbotix_xsarm_descriptions/ament_cmake_core/interbotix_xsarm_descriptionsConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xsarm_descriptions" TYPE FILE FILES "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xsarm_descriptions/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -118,5 +118,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ayaan/URC/URC/build/interbotix_xsarm_descriptions/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/admin1/URC/build/interbotix_xsarm_descriptions/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,4 @@
+source;share/piReceiver/local_setup.bash
+source;share/piReceiver/local_setup.dsv
+source;share/piReceiver/local_setup.sh
+source;share/piReceiver/local_setup.zsh

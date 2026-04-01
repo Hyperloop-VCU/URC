@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk
+# Install script for directory: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/interbotix_xs_sdk")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/interbotix_xs_sdk")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk/xs_sdk"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk" TYPE EXECUTABLE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/xs_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk" TYPE EXECUTABLE FILES "/home/admin1/URC/build/interbotix_xs_sdk/xs_sdk")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk/xs_sdk" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk/xs_sdk")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk/xs_sdk"
-         OLD_RPATH "/opt/ros/jazzy/lib:/home/ayaan/URC/URC/install/interbotix_xs_msgs/lib:/home/ayaan/URC/URC/install/interbotix_xs_driver/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/home/ayaan/URC/URC/install/dynamixel_sdk/lib:/home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib:"
+         OLD_RPATH "/opt/ros/jazzy/lib:/home/admin1/URC/install/interbotix_xs_msgs/lib:/home/admin1/URC/install/interbotix_xs_driver/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/home/admin1/URC/install/dynamixel_sdk/lib:/home/admin1/URC/install/dynamixel_workbench_toolbox/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk/xs_sdk")
@@ -63,23 +63,23 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk" TYPE PROGRAM FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/scripts/xs_sdk_sim.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/interbotix_xs_sdk" TYPE PROGRAM FILES "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/scripts/xs_sdk_sim.py")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/" TYPE DIRECTORY FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/" TYPE DIRECTORY FILES "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/config")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interbotix_xs_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/interbotix_xs_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/interbotix_xs_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/interbotix_xs_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -87,7 +87,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -95,42 +95,42 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/environment" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/environment" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/packages/interbotix_xs_sdk")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_index/share/ament_index/resource_index/packages/interbotix_xs_sdk")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk/cmake" TYPE FILE FILES
-    "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_core/interbotix_xs_sdkConfig.cmake"
-    "/home/ayaan/URC/URC/build/interbotix_xs_sdk/ament_cmake_core/interbotix_xs_sdkConfig-version.cmake"
+    "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_core/interbotix_xs_sdkConfig.cmake"
+    "/home/admin1/URC/build/interbotix_xs_sdk/ament_cmake_core/interbotix_xs_sdkConfig-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/interbotix_xs_sdk" TYPE FILE FILES "/home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -141,5 +141,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ayaan/URC/URC/build/interbotix_xs_sdk/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/admin1/URC/build/interbotix_xs_sdk/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

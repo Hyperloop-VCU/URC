@@ -1,0 +1,20 @@
+[100%] Built target receive
+-- Install configuration: ""
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/launch
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/launch/receiver_launch.py
+-- Up-to-date: /home/admin1/URC/install/piReceiver/lib/piReceiver/receive
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/package_run_dependencies/piReceiver
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/parent_prefix_path/piReceiver
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/ament_prefix_path.sh
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/path.sh
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/environment/path.dsv
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.bash
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.sh
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.zsh
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/local_setup.dsv
+-- Installing: /home/admin1/URC/install/piReceiver/share/piReceiver/package.dsv
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/ament_index/resource_index/packages/piReceiver
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/cmake/piReceiverConfig.cmake
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/cmake/piReceiverConfig-version.cmake
+-- Up-to-date: /home/admin1/URC/install/piReceiver/share/piReceiver/package.xml

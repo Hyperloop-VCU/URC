@@ -1,0 +1,193 @@
+[0.173s] Invoking command in '/home/admin1/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/admin1/URC/build/dynamixel_sdk -- -j4 -l4
+[2.659s] [  0%] Built target ament_cmake_python_copy_dynamixel_easy_sdk
+[2.660s] [  0%] Built target ament_cmake_python_copy_dynamixel_sdk
+[2.665s] [100%] Built target dynamixel_sdk
+[3.549s] running egg_info
+[3.806s] writing dynamixel_sdk.egg-info/PKG-INFO
+[3.810s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[3.810s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[3.837s] running egg_info
+[4.081s] writing dynamixel_easy_sdk.egg-info/PKG-INFO
+[4.085s] writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+[4.089s] writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+[4.339s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[4.343s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[4.603s] [100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[4.855s] reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[4.861s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[5.127s] [100%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[5.299s] Invoked command in '/home/admin1/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/admin1/URC/build/dynamixel_sdk -- -j4 -l4
+[5.416s] Invoking command in '/home/admin1/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/admin1/URC/build/dynamixel_sdk
+[5.510s] -- Install configuration: ""
+[5.513s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include/
+[5.513s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk
+[5.516s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+[5.517s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+[5.518s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+[5.522s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+[5.522s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+[5.523s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+[5.524s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+[5.529s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk
+[5.529s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[5.530s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[5.535s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[5.536s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[5.536s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[5.538s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[5.539s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[5.540s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[5.541s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[5.546s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[5.547s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[5.550s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[5.552s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[5.553s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[5.560s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[5.560s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[5.567s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[5.569s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table
+[5.573s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+[5.573s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+[5.579s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+[5.580s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+[5.586s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+[5.587s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+[5.588s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+[5.599s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+[5.600s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+[5.605s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+[5.609s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+[5.609s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+[5.610s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+[5.610s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+[5.618s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+[5.619s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+[5.620s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+[5.621s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+[5.630s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+[5.632s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+[5.632s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+[5.638s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+[5.639s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+[5.640s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+[5.641s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+[5.645s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+[5.646s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+[5.651s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+[5.651s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+[5.652s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+[5.653s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+[5.658s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+[5.662s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+[5.662s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+[5.663s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+[5.664s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+[5.665s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+[5.665s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+[5.669s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+[5.671s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+[5.671s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+[5.675s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+[5.676s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+[5.677s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+[5.678s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+[5.682s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+[5.683s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+[5.684s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+[5.688s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+[5.689s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+[5.689s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+[5.693s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+[5.694s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+[5.694s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+[5.695s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+[5.699s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+[5.700s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+[5.700s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+[5.701s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+[5.702s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+[5.706s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+[5.707s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+[5.708s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+[5.711s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+[5.712s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+[5.713s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+[5.713s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+[5.717s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+[5.718s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[5.719s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[5.719s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info
+[5.720s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/top_level.txt
+[5.724s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/PKG-INFO
+[5.729s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/SOURCES.txt
+[5.730s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/dependency_links.txt
+[5.731s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk
+[5.735s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py
+[5.736s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py
+[5.736s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py
+[5.737s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.cpp
+[5.738s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py
+[5.742s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.cpp
+[5.742s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py
+[5.744s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py
+[5.748s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_mac.cpp
+[5.752s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.cpp
+[5.752s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.cpp
+[5.753s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_arduino.cpp
+[5.753s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[5.756s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py
+[5.757s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_linux.cpp
+[5.758s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py
+[5.758s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py
+[5.763s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.cpp
+[5.764s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_handler.cpp
+[5.771s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py
+[5.771s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[5.776s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[5.777s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_windows.cpp
+[5.781s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.cpp
+[5.782s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[6.144s] Listing '/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk'...
+[6.333s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info
+[6.333s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/top_level.txt
+[6.355s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/PKG-INFO
+[6.357s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/SOURCES.txt
+[6.369s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/dependency_links.txt
+[6.379s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk
+[6.379s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+[6.380s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py
+[6.381s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.cpp
+[6.391s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py
+[6.392s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.cpp
+[6.393s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.cpp
+[6.400s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py
+[6.401s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.cpp
+[6.401s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py
+[6.402s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py
+[6.408s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py
+[6.408s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py
+[6.860s] Listing '/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk'...
+[6.953s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[6.957s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[6.957s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[6.958s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[6.975s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[6.976s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[6.983s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[6.984s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[7.007s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[7.008s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[7.009s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[7.009s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[7.022s] -- Installing: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[7.023s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[7.024s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[7.024s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[7.025s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[7.030s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.031s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[7.032s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[7.043s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[7.044s] -- Up-to-date: /home/admin1/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[7.080s] Invoked command in '/home/admin1/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/admin1/URC/build/dynamixel_sdk

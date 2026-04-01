@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "interbotix_xs_msgs/msg/detail/locobot_joy__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "interbotix_xs_msgs/msg/detail/locobot_joy__type_support.h"
 #include "interbotix_xs_msgs/msg/detail/locobot_joy__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "interbotix_xs_msgs/msg/detail/locobot_joy__struct.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/ayaan/URC/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py
+# Install script for directory: /home/admin1/URC/build/interbotix_xs_msgs/interbotix_xs_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ayaan/URC/URC/install/interbotix_xs_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/interbotix_xs_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

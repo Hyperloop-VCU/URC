@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_driver
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_driver
 
 # Include any dependencies generated for this target.
 include CMakeFiles/interbotix_xs_driver.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/interbotix_xs_driver.dir/progress.make
 include CMakeFiles/interbotix_xs_driver.dir/flags.make
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o: CMakeFiles/interbotix_xs_driver.dir/flags.make
-CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp
+CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp
 CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o: CMakeFiles/interbotix_xs_driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o -MF CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o.d -o CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o -c /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin1/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o -MF CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o.d -o CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o -c /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp > CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp > CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.i
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp -o CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_driver.cpp -o CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.s
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o: CMakeFiles/interbotix_xs_driver.dir/flags.make
-CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp
+CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp
 CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o: CMakeFiles/interbotix_xs_driver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o -MF CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o.d -o CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o -c /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin1/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o -MF CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o.d -o CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o -c /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp > CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp > CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.i
 
 CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp -o CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver/src/xs_logging.cpp -o CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.s
 
 # Object files for target interbotix_xs_driver
 interbotix_xs_driver_OBJECTS = \
@@ -108,7 +108,7 @@ interbotix_xs_driver_EXTERNAL_OBJECTS =
 libinterbotix_xs_driver.so: CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o
 libinterbotix_xs_driver.so: CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o
 libinterbotix_xs_driver.so: CMakeFiles/interbotix_xs_driver.dir/build.make
-libinterbotix_xs_driver.so: /home/ayaan/URC/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+libinterbotix_xs_driver.so: /home/admin1/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -168,7 +168,7 @@ libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesu
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libtracetools.so
-libinterbotix_xs_driver.so: /home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+libinterbotix_xs_driver.so: /home/admin1/URC/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_typesupport_c.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/librcl_interfaces__rosidl_generator_c.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/librcl_logging_interface.so
@@ -213,7 +213,7 @@ libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_gen
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libinterbotix_xs_driver.so: /opt/ros/jazzy/lib/librcutils.so
 libinterbotix_xs_driver.so: CMakeFiles/interbotix_xs_driver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libinterbotix_xs_driver.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin1/URC/build/interbotix_xs_driver/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libinterbotix_xs_driver.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/interbotix_xs_driver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -225,6 +225,6 @@ CMakeFiles/interbotix_xs_driver.dir/clean:
 .PHONY : CMakeFiles/interbotix_xs_driver.dir/clean
 
 CMakeFiles/interbotix_xs_driver.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_driver /home/ayaan/URC/URC/build/interbotix_xs_driver /home/ayaan/URC/URC/build/interbotix_xs_driver /home/ayaan/URC/URC/build/interbotix_xs_driver/CMakeFiles/interbotix_xs_driver.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_driver /home/admin1/URC/build/interbotix_xs_driver /home/admin1/URC/build/interbotix_xs_driver /home/admin1/URC/build/interbotix_xs_driver/CMakeFiles/interbotix_xs_driver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/interbotix_xs_driver.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk
+CMAKE_SOURCE_DIR = /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ayaan/URC/URC/build/interbotix_xs_sdk
+CMAKE_BINARY_DIR = /home/admin1/URC/build/interbotix_xs_sdk
 
 # Include any dependencies generated for this target.
 include CMakeFiles/xs_sdk.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/xs_sdk.dir/progress.make
 include CMakeFiles/xs_sdk.dir/flags.make
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o: CMakeFiles/xs_sdk.dir/flags.make
-CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp
+CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp
 CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o: CMakeFiles/xs_sdk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o -MF CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o.d -o CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o -c /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o -MF CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o.d -o CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o -c /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp > CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp > CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.i
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp -o CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk.cpp -o CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.s
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o: CMakeFiles/xs_sdk.dir/flags.make
-CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o: /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp
+CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o: /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp
 CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o: CMakeFiles/xs_sdk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o -MF CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o.d -o CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o -c /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o -MF CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o.d -o CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o -c /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp > CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp > CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.i
 
 CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp -o CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk/src/xs_sdk_obj.cpp -o CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.s
 
 # Object files for target xs_sdk
 xs_sdk_OBJECTS = \
@@ -115,19 +115,19 @@ xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
 xs_sdk: /opt/ros/jazzy/lib/liburdf.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_fastrtps_c.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_introspection_c.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_fastrtps_cpp.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_introspection_cpp.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_cpp.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_generator_py.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_driver/lib/libinterbotix_xs_driver.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_fastrtps_c.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_introspection_c.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_fastrtps_cpp.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_introspection_cpp.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_cpp.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_generator_py.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_driver/lib/libinterbotix_xs_driver.so
 xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 xs_sdk: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
-xs_sdk: /opt/ros/jazzy/lib/x86_64-linux-gnu/liburdfdom_model.so.4.0
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_c.so
-xs_sdk: /home/ayaan/URC/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_generator_c.so
+xs_sdk: /opt/ros/jazzy/lib/aarch64-linux-gnu/liburdfdom_model.so.4.0
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_typesupport_c.so
+xs_sdk: /home/admin1/URC/install/interbotix_xs_msgs/lib/libinterbotix_xs_msgs__rosidl_generator_c.so
 xs_sdk: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_c.so
 xs_sdk: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_introspection_c.so
 xs_sdk: /opt/ros/jazzy/lib/libtrajectory_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -211,7 +211,7 @@ xs_sdk: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 xs_sdk: /opt/ros/jazzy/lib/libfastcdr.so.2.2.5
 xs_sdk: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 xs_sdk: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
-xs_sdk: /home/ayaan/URC/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+xs_sdk: /home/admin1/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
 xs_sdk: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 xs_sdk: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 xs_sdk: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -253,9 +253,9 @@ xs_sdk: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 xs_sdk: /opt/ros/jazzy/lib/libstatistics_msgs__rosidl_generator_py.so
 xs_sdk: /opt/ros/jazzy/lib/libtracetools.so
 xs_sdk: /opt/ros/jazzy/lib/librclcpp.so
-xs_sdk: /home/ayaan/URC/URC/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+xs_sdk: /home/admin1/URC/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
 xs_sdk: CMakeFiles/xs_sdk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable xs_sdk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable xs_sdk"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/xs_sdk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -267,6 +267,6 @@ CMakeFiles/xs_sdk.dir/clean:
 .PHONY : CMakeFiles/xs_sdk.dir/clean
 
 CMakeFiles/xs_sdk.dir/depend:
-	cd /home/ayaan/URC/URC/build/interbotix_xs_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/ayaan/URC/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk /home/ayaan/URC/URC/build/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/admin1/URC/build/interbotix_xs_sdk && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/admin1/URC/urc_ws_interbotix/src/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk /home/admin1/URC/build/interbotix_xs_sdk/CMakeFiles/xs_sdk.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/xs_sdk.dir/depend
 

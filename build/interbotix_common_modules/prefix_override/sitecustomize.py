@@ -1,4 +1,4 @@
 import sys
 if sys.prefix == '/usr':
     sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/ayaan/URC/URC/install/interbotix_common_modules'
+    sys.prefix = sys.exec_prefix = '/home/admin1/URC/install/interbotix_common_modules'

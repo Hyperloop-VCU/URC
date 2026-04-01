@@ -1,0 +1,33 @@
+[0.258s] Invoking command in '/home/admin1/URC/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/admin1/URC/build/dynamixel_workbench_toolbox -- -j4 -l4
+[0.759s] [100%] Built target dynamixel_workbench_toolbox
+[0.845s] Invoked command in '/home/admin1/URC/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/admin1/URC/build/dynamixel_workbench_toolbox -- -j4 -l4
+[0.855s] Invoking command in '/home/admin1/URC/build/dynamixel_workbench_toolbox': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/admin1/URC/build/dynamixel_workbench_toolbox
+[0.948s] -- Install configuration: ""
+[0.966s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/lib/libdynamixel_workbench_toolbox.so
+[0.968s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include/
+[0.968s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox
+[0.972s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_workbench.h
+[0.974s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_tool.h
+[0.977s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_driver.h
+[0.979s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/include//dynamixel_workbench_toolbox/dynamixel_item.h
+[0.980s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.sh
+[0.981s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/library_path.dsv
+[0.984s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/package_run_dependencies/dynamixel_workbench_toolbox
+[0.985s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/parent_prefix_path/dynamixel_workbench_toolbox
+[0.986s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.sh
+[0.986s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/ament_prefix_path.dsv
+[0.987s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.sh
+[0.992s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/environment/path.dsv
+[0.992s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.bash
+[0.993s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.sh
+[0.994s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.zsh
+[0.997s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/local_setup.dsv
+[0.998s] -- Installing: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.dsv
+[0.998s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/ament_index/resource_index/packages/dynamixel_workbench_toolbox
+[1.003s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.006s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.007s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/ament_cmake_export_libraries-extras.cmake
+[1.011s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig.cmake
+[1.013s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/cmake/dynamixel_workbench_toolboxConfig-version.cmake
+[1.013s] -- Up-to-date: /home/admin1/URC/install/dynamixel_workbench_toolbox/share/dynamixel_workbench_toolbox/package.xml
+[1.021s] Invoked command in '/home/admin1/URC/build/dynamixel_workbench_toolbox' returned '0': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/admin1/URC/build/dynamixel_workbench_toolbox

@@ -1,0 +1,32 @@
+[0.145s] Invoking command in '/home/admin1/URC/build/interbotix_xs_driver': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox/lib:/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/admin1/URC/build/interbotix_xs_driver -- -j4 -l4
+[0.758s] [100%] Built target interbotix_xs_driver
+[0.917s] Invoked command in '/home/admin1/URC/build/interbotix_xs_driver' returned '0': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox/lib:/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/admin1/URC/build/interbotix_xs_driver -- -j4 -l4
+[0.931s] Invoking command in '/home/admin1/URC/build/interbotix_xs_driver': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox/lib:/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/admin1/URC/build/interbotix_xs_driver
+[1.038s] -- Install configuration: ""
+[1.043s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/lib/libinterbotix_xs_driver.so
+[1.055s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/include/interbotix_xs_driver/version.hpp
+[1.055s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/include/interbotix_xs_driver
+[1.056s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/include/interbotix_xs_driver/xs_driver.hpp
+[1.057s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/include/interbotix_xs_driver/xs_logging.hpp
+[1.059s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/include/interbotix_xs_driver/xs_common.hpp
+[1.059s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.xml
+[1.065s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/ament_index/resource_index/package_run_dependencies/interbotix_xs_driver
+[1.070s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/ament_index/resource_index/parent_prefix_path/interbotix_xs_driver
+[1.079s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/environment/ament_prefix_path.sh
+[1.086s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/environment/ament_prefix_path.dsv
+[1.087s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/environment/path.sh
+[1.088s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/environment/path.dsv
+[1.088s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/local_setup.bash
+[1.099s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/local_setup.sh
+[1.102s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/local_setup.zsh
+[1.105s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/local_setup.dsv
+[1.106s] -- Installing: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.dsv
+[1.110s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/ament_index/resource_index/packages/interbotix_xs_driver
+[1.115s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/export_interbotix_xs_driverExport.cmake
+[1.116s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/export_interbotix_xs_driverExport-noconfig.cmake
+[1.117s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.117s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/ament_cmake_export_targets-extras.cmake
+[1.122s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/interbotix_xs_driverConfig.cmake
+[1.123s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/cmake/interbotix_xs_driverConfig-version.cmake
+[1.124s] -- Up-to-date: /home/admin1/URC/install/interbotix_xs_driver/share/interbotix_xs_driver/package.xml
+[1.130s] Invoked command in '/home/admin1/URC/build/interbotix_xs_driver' returned '0': AMENT_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox:/home/admin1/URC/install/dynamixel_sdk:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/admin1/URC/install/dynamixel_workbench_toolbox/lib:/home/admin1/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/admin1/URC/install/dynamixel_sdk/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/admin1/URC/build/interbotix_xs_driver

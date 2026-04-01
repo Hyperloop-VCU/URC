@@ -29,6 +29,7 @@ install(
     demos/joint_position_control.py
     demos/joint_pwm_control.py
     demos/joint_trajectory_control.py
+    robot_control.py
   DESTINATION
     lib/${PROJECT_NAME}
 )

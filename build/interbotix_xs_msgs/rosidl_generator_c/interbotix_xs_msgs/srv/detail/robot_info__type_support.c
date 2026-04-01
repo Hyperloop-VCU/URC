@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "interbotix_xs_msgs/srv/detail/robot_info__struct.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "interbotix_xs_msgs/srv/detail/robot_info__type_support.h"
+#include "interbotix_xs_msgs/srv/detail/robot_info__struct.h"
 #include "interbotix_xs_msgs/srv/detail/robot_info__functions.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"
