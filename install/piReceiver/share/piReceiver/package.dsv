@@ -1,8 +1,0 @@
-source;share/piReceiver/hook/cmake_prefix_path.ps1
-source;share/piReceiver/hook/cmake_prefix_path.dsv
-source;share/piReceiver/hook/cmake_prefix_path.sh
-source;share/piReceiver/local_setup.bash
-source;share/piReceiver/local_setup.dsv
-source;share/piReceiver/local_setup.ps1
-source;share/piReceiver/local_setup.sh
-source;share/piReceiver/local_setup.zsh

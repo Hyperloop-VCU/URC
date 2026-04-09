@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o"
-  "CMakeFiles/interbotix_xs_driver.dir/src/xs_driver.cpp.o.d"
   "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o"
-  "CMakeFiles/interbotix_xs_driver.dir/src/xs_logging.cpp.o.d"
   "libinterbotix_xs_driver.pdb"
   "libinterbotix_xs_driver.so"
 )

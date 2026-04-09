@@ -6,7 +6,7 @@
 module dynamixel_sdk_custom_interfaces {
   module msg {
     @verbatim (language="comment", text=
-      "Messages")
+      " Messages")
     struct SetPosition {
       uint8 id;
 

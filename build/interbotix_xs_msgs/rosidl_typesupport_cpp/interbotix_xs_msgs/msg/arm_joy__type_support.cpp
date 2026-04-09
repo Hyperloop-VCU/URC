@@ -4,7 +4,6 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
-#include "interbotix_xs_msgs/msg/detail/arm_joy__functions.h"
 #include "interbotix_xs_msgs/msg/detail/arm_joy__struct.hpp"
 #include "rosidl_typesupport_cpp/identifier.hpp"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t ArmJoy_message_type_support_handle = 
   ::rosidl_typesupport_cpp::typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_ArmJoy_message_typesupport_map),
   ::rosidl_typesupport_cpp::get_message_typesupport_handle_function,
-  &interbotix_xs_msgs__msg__ArmJoy__get_type_hash,
-  &interbotix_xs_msgs__msg__ArmJoy__get_type_description,
-  &interbotix_xs_msgs__msg__ArmJoy__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_cpp

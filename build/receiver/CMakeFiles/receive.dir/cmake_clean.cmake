@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/receive.dir/src/receive.cpp.o"
-  "CMakeFiles/receive.dir/src/receive.cpp.o.d"
   "receive"
   "receive.pdb"
 )

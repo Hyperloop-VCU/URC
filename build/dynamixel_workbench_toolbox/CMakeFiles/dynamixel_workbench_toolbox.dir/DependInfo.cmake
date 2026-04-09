@@ -1,25 +1,33 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/adam/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp" "/home/adam/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o"
+  "/home/adam/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_item.cpp" "/home/adam/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o"
+  "/home/adam/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp" "/home/adam/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o"
+  "/home/adam/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp" "/home/adam/URC/build/dynamixel_workbench_toolbox/CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "CONTROL_TABLE_PATH=\"/home/adam/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table\""
+  "DEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
+  "RCUTILS_ENABLE_FAULT_INJECTION"
+  "dynamixel_workbench_toolbox_EXPORTS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o" "gcc" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_driver.cpp.o.d"
-  "/home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_item.cpp" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o" "gcc" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_item.cpp.o.d"
-  "/home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o" "gcc" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_tool.cpp.o.d"
-  "/home/admin1/URC/urc_ws_interbotix/src/dynamixel-workbench/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o" "gcc" "CMakeFiles/dynamixel_workbench_toolbox.dir/src/dynamixel_workbench_toolbox/dynamixel_workbench.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/adam/URC/urc_ws_interbotix/src/dynamixel-workbench/include"
+  "/home/adam/URC/install/dynamixel_sdk/include"
+  "/opt/ros/galactic/include"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

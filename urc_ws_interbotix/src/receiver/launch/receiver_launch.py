@@ -28,14 +28,49 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([FindPackageShare('interbotix_xsarm_control'), '/launch/xsarm_control.launch.py' ]),
             launch_arguments={'robot_model': 'wx250'}.items()
         ),
-
+          
         #launch actual control program
-        Node(
-            package ="interbotix_xsarm_control",
-            executable = "robot_control",
-            name = "control"  
+        #Node(
+        #    package ="interbotix_xsarm_control",
+          #  executable = "robot_control",
+        #    name = "control"  
 
-                )
+          #      ),
+        
+        # PS4 controller - reads raw joystick input
+        Node(
+            package='joy',
+            executable='joy_node',
+            name='joy_node',
+            namespace='wx250',
+            output='screen',
+            parameters=[{'dev': '/dev/input/js0'}],
+            remappings=[('joy', 'commands/joy_raw')]
+        ),
+
+        # Translates joystick input to arm commands
+        Node(
+            package='interbotix_xsarm_joy',
+            executable='xsarm_joy',
+            name='xsarm_joy',
+            namespace='wx250',
+            output='screen',
+            parameters=[{
+                'threshold': 0.75,
+                'controller': 'ps4'
+            }]
+        ),
+
+        # Executes arm commands from xsarm_joy
+        Node(
+            package='interbotix_xsarm_joy',
+            executable='xsarm_robot.py',
+            name='xsarm_robot',
+            namespace='wx250',
+            output='screen',
+            parameters=[{'robot_model': 'wx250', 'robot_name': 'wx250'}]
+        ),
+
 
     ])
     

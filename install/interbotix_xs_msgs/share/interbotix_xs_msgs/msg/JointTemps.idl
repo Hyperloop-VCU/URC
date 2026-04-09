@@ -6,10 +6,10 @@
 module interbotix_xs_msgs {
   module msg {
     @verbatim (language="comment", text=
-      "This message is used specifically in the interbotix_xsarm_diagnostic_tool package")
+      " This message is used specifically in the interbotix_xsarm_diagnostic_tool package")
     struct JointTemps {
       @verbatim (language="comment", text=
-        "Holds the temperatures for the specified joints")
+        " Holds the temperatures for the specified joints")
       @unit (value="C")
       sequence<string> names;
 

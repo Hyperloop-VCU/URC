@@ -1,0 +1,36 @@
+[1.801s] Invoking command in '/home/adam/URC/urc_ws_interbotix/src/modern_robotics': PYTHONPATH=/home/adam/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam/URC/install/modern_robotics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/adam/URC/build/modern_robotics/build install --record /home/adam/URC/build/modern_robotics/install.log --single-version-externally-managed install_data
+[2.233s] running egg_info
+[2.234s] creating ../../../build/modern_robotics/modern_robotics.egg-info
+[2.235s] writing ../../../build/modern_robotics/modern_robotics.egg-info/PKG-INFO
+[2.236s] writing dependency_links to ../../../build/modern_robotics/modern_robotics.egg-info/dependency_links.txt
+[2.237s] writing entry points to ../../../build/modern_robotics/modern_robotics.egg-info/entry_points.txt
+[2.237s] writing requirements to ../../../build/modern_robotics/modern_robotics.egg-info/requires.txt
+[2.238s] writing top-level names to ../../../build/modern_robotics/modern_robotics.egg-info/top_level.txt
+[2.241s] writing manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[2.303s] reading manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[2.304s] writing manifest file '../../../build/modern_robotics/modern_robotics.egg-info/SOURCES.txt'
+[2.304s] running build
+[2.304s] running build_py
+[2.305s] creating /home/adam/URC/build/modern_robotics/build
+[2.305s] creating /home/adam/URC/build/modern_robotics/build/lib
+[2.305s] creating /home/adam/URC/build/modern_robotics/build/lib/modern_robotics
+[2.305s] copying modern_robotics/__init__.py -> /home/adam/URC/build/modern_robotics/build/lib/modern_robotics
+[2.305s] copying modern_robotics/core.py -> /home/adam/URC/build/modern_robotics/build/lib/modern_robotics
+[2.305s] running install
+[2.306s] running install_lib
+[2.308s] creating /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics
+[2.308s] copying /home/adam/URC/build/modern_robotics/build/lib/modern_robotics/__init__.py -> /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics
+[2.309s] copying /home/adam/URC/build/modern_robotics/build/lib/modern_robotics/core.py -> /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics
+[2.309s] byte-compiling /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics/__init__.py to __init__.cpython-38.pyc
+[2.313s] byte-compiling /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics/core.py to core.cpython-38.pyc
+[2.320s] running install_data
+[2.321s] creating /home/adam/URC/install/modern_robotics/share/ament_index
+[2.321s] creating /home/adam/URC/install/modern_robotics/share/ament_index/resource_index
+[2.321s] creating /home/adam/URC/install/modern_robotics/share/ament_index/resource_index/packages
+[2.321s] copying resource/modern_robotics -> /home/adam/URC/install/modern_robotics/share/ament_index/resource_index/packages
+[2.321s] copying package.xml -> /home/adam/URC/install/modern_robotics/share/modern_robotics
+[2.321s] running install_egg_info
+[2.323s] Copying ../../../build/modern_robotics/modern_robotics.egg-info to /home/adam/URC/install/modern_robotics/lib/python3.8/site-packages/modern_robotics-0.0.0-py3.8.egg-info
+[2.325s] running install_scripts
+[2.354s] writing list of installed files to '/home/adam/URC/build/modern_robotics/install.log'
+[2.391s] Invoked command in '/home/adam/URC/urc_ws_interbotix/src/modern_robotics' returned '0': PYTHONPATH=/home/adam/URC/build/modern_robotics/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adam/URC/install/modern_robotics/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/modern_robotics build --build-base /home/adam/URC/build/modern_robotics/build install --record /home/adam/URC/build/modern_robotics/install.log --single-version-externally-managed install_data

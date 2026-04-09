@@ -1,0 +1,35 @@
+[0.046s] Invoking command in '/home/adam/URC/build/interbotix_xsarm_joy': AMENT_PREFIX_PATH=/home/adam/URC/install/interbotix_xsarm_control:/home/adam/URC/install/interbotix_xsarm_descriptions:/home/adam/URC/install/interbotix_xs_modules:/home/adam/URC/install/interbotix_xs_sdk:/home/adam/URC/install/interbotix_xs_driver:/home/adam/URC/install/dynamixel_workbench_toolbox:/home/adam/URC/install/interbotix_xs_msgs:/home/adam/URC/install/interbotix_common_modules:/home/adam/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/adam/URC/install/interbotix_xsarm_control:/home/adam/URC/install/interbotix_xsarm_descriptions:/home/adam/URC/install/interbotix_xs_sdk:/home/adam/URC/install/interbotix_xs_driver:/home/adam/URC/install/dynamixel_workbench_toolbox:/home/adam/URC/install/interbotix_xs_msgs:/home/adam/URC/install/dynamixel_sdk:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/adam/URC/install/interbotix_xs_driver/lib:/home/adam/URC/install/dynamixel_workbench_toolbox/lib:/home/adam/URC/install/interbotix_xs_msgs/lib:/home/adam/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/adam/URC/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/adam/URC/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/adam/URC/install/interbotix_common_modules/lib/python3.8/site-packages:/home/adam/URC/install/dynamixel_sdk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/adam/URC/urc_ws_interbotix/src/interbotix_xsarm_joy -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam/URC/install/interbotix_xsarm_joy
+[0.132s] -- The C compiler identification is GNU 9.4.0
+[0.222s] -- The CXX compiler identification is GNU 9.4.0
+[0.233s] -- Check for working C compiler: /usr/bin/cc
+[0.336s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.337s] -- Detecting C compiler ABI info
+[0.443s] -- Detecting C compiler ABI info - done
+[0.460s] -- Detecting C compile features
+[0.461s] -- Detecting C compile features - done
+[0.466s] -- Check for working CXX compiler: /usr/bin/c++
+[0.582s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.583s] -- Detecting CXX compiler ABI info
+[0.700s] -- Detecting CXX compiler ABI info - done
+[0.718s] -- Detecting CXX compile features
+[0.718s] -- Detecting CXX compile features - done
+[0.739s] CMake Error at CMakeLists.txt:10 (find_package):
+[0.739s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.739s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.739s]   CMake did not find one.
+[0.739s] 
+[0.739s]   Could not find a package configuration file provided by "catkin" with any
+[0.739s]   of the following names:
+[0.740s] 
+[0.740s]     catkinConfig.cmake
+[0.740s]     catkin-config.cmake
+[0.740s] 
+[0.740s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.740s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.740s]   provides a separate development package or SDK, be sure it has been
+[0.740s]   installed.
+[0.740s] 
+[0.740s] 
+[0.740s] -- Configuring incomplete, errors occurred!
+[0.741s] See also "/home/adam/URC/build/interbotix_xsarm_joy/CMakeFiles/CMakeOutput.log".
+[0.743s] Invoked command in '/home/adam/URC/build/interbotix_xsarm_joy' returned '1': AMENT_PREFIX_PATH=/home/adam/URC/install/interbotix_xsarm_control:/home/adam/URC/install/interbotix_xsarm_descriptions:/home/adam/URC/install/interbotix_xs_modules:/home/adam/URC/install/interbotix_xs_sdk:/home/adam/URC/install/interbotix_xs_driver:/home/adam/URC/install/dynamixel_workbench_toolbox:/home/adam/URC/install/interbotix_xs_msgs:/home/adam/URC/install/interbotix_common_modules:/home/adam/URC/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/adam/URC/install/interbotix_xsarm_control:/home/adam/URC/install/interbotix_xsarm_descriptions:/home/adam/URC/install/interbotix_xs_sdk:/home/adam/URC/install/interbotix_xs_driver:/home/adam/URC/install/dynamixel_workbench_toolbox:/home/adam/URC/install/interbotix_xs_msgs:/home/adam/URC/install/dynamixel_sdk:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/adam/URC/install/interbotix_xs_driver/lib:/home/adam/URC/install/dynamixel_workbench_toolbox/lib:/home/adam/URC/install/interbotix_xs_msgs/lib:/home/adam/URC/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/adam/URC/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/adam/URC/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/adam/URC/install/interbotix_common_modules/lib/python3.8/site-packages:/home/adam/URC/install/dynamixel_sdk/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/adam/URC/urc_ws_interbotix/src/interbotix_xsarm_joy -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/adam/URC/install/interbotix_xsarm_joy

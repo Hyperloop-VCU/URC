@@ -35,8 +35,8 @@ motors:
     Return_Delay_Time: 0
     Drive_Mode: 0
     Velocity_Limit: 131
-    Min_Position_Limit: 0
-    Max_Position_Limit: 4095
+    Min_Position_Limit: 1024  #2048 is center/middle, 1 degree = 11.377777778
+    Max_Position_Limit: 3072 #0 - 4095 is 360 degrees
     Secondary_ID: 255
 
   shoulder:

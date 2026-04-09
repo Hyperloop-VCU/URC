@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o"
-  "CMakeFiles/xs_sdk.dir/src/xs_sdk.cpp.o.d"
   "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o"
-  "CMakeFiles/xs_sdk.dir/src/xs_sdk_obj.cpp.o.d"
   "xs_sdk"
   "xs_sdk.pdb"
 )

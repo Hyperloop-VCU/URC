@@ -4,9 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "interbotix_xs_msgs/msg/rosidl_typesupport_c__visibility_control.h"
 #include "interbotix_xs_msgs/msg/detail/joint_trajectory_command__struct.h"
-#include "interbotix_xs_msgs/msg/detail/joint_trajectory_command__type_support.h"
-#include "interbotix_xs_msgs/msg/detail/joint_trajectory_command__functions.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -73,9 +72,6 @@ static const rosidl_message_type_support_t JointTrajectoryCommand_message_type_s
   rosidl_typesupport_c__typesupport_identifier,
   reinterpret_cast<const type_support_map_t *>(&_JointTrajectoryCommand_message_typesupport_map),
   rosidl_typesupport_c__get_message_typesupport_handle_function,
-  &interbotix_xs_msgs__msg__JointTrajectoryCommand__get_type_hash,
-  &interbotix_xs_msgs__msg__JointTrajectoryCommand__get_type_description,
-  &interbotix_xs_msgs__msg__JointTrajectoryCommand__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_c
@@ -89,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_interbotix_xs_msgs
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, interbotix_xs_msgs, msg, JointTrajectoryCommand)() {
   return &::interbotix_xs_msgs::msg::rosidl_typesupport_c::JointTrajectoryCommand_message_type_support_handle;

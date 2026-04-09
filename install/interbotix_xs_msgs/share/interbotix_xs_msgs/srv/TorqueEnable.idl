@@ -6,18 +6,18 @@
 module interbotix_xs_msgs {
   module srv {
     @verbatim (language="comment", text=
-      "Torque joints on/off")
+      " Torque joints on/off")
     struct TorqueEnable_Request {
       @verbatim (language="comment", text=
-        "set to 'group' if commanding a joint group or 'single' if commanding a single joint")
+        " set to 'group' if commanding a joint group or 'single' if commanding a single joint")
       string cmd_type;
 
       @verbatim (language="comment", text=
-        "name of the group if commanding a joint group or joint if commanding a single joint")
+        " name of the group if commanding a joint group or joint if commanding a single joint")
       string name;
 
       @verbatim (language="comment", text=
-        "set to 'true' to torque on or 'false' to torque off")
+        " set to 'true' to torque on or 'false' to torque off")
       boolean enable;
     };
     struct TorqueEnable_Response {

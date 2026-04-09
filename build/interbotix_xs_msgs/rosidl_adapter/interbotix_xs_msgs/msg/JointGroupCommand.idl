@@ -6,15 +6,15 @@
 module interbotix_xs_msgs {
   module msg {
     @verbatim (language="comment", text=
-      "Command the joints in the specified joint group. Note that the commands are processed differently based on the group's operating mode." "\n"
-      "For example, if a group's operating mode is set to 'position', the commands are interpreted as positions in radians")
+      " Command the joints in the specified joint group. Note that the commands are processed differently based on the group's operating mode." "\n"
+      " For example, if a group's operating mode is set to 'position', the commands are interpreted as positions in radians")
     struct JointGroupCommand {
       @verbatim (language="comment", text=
-        "Name of joint group")
+        " Name of joint group")
       string name;
 
       @verbatim (language="comment", text=
-        "List of joint commands; order is dictated by the index of each joint name for the given group in the 'groups' section of a 'motor_config' yaml file")
+        " List of joint commands; order is dictated by the index of each joint name for the given group in the 'groups' section of a 'motor_config' yaml file")
       sequence<float> cmd;
     };
   };

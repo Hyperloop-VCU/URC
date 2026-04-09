@@ -1,8 +1,8 @@
-# Install script for directory: /home/admin1/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
+# Install script for directory: /home/adam/URC/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/admin1/URC/install/dynamixel_sdk_custom_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/adam/URC/install/dynamixel_sdk_custom_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,10 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

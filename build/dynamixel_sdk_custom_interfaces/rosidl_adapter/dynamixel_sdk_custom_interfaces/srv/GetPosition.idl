@@ -6,13 +6,13 @@
 module dynamixel_sdk_custom_interfaces {
   module srv {
     @verbatim (language="comment", text=
-      "Constants" "\n"
-      "Request")
+      " Constants" "\n"
+      " Request")
     struct GetPosition_Request {
       uint8 id;
     };
     @verbatim (language="comment", text=
-      "Response")
+      " Response")
     struct GetPosition_Response {
       int32 position;
     };

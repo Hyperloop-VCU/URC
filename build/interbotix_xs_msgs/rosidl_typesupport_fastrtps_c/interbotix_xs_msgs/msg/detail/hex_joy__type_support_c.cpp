@@ -5,11 +5,9 @@
 
 
 #include <cassert>
-#include <cstddef>
 #include <limits>
 #include <string>
 #include "rosidl_typesupport_fastrtps_c/identifier.h"
-#include "rosidl_typesupport_fastrtps_c/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "interbotix_xs_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
@@ -42,12 +40,15 @@ extern "C"
 
 using _HexJoy__ros_msg_type = interbotix_xs_msgs__msg__HexJoy;
 
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-bool cdr_serialize_interbotix_xs_msgs__msg__HexJoy(
-  const interbotix_xs_msgs__msg__HexJoy * ros_message,
+static bool _HexJoy__cdr_serialize(
+  const void * untyped_ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const _HexJoy__ros_msg_type * ros_message = static_cast<const _HexJoy__ros_msg_type *>(untyped_ros_message);
   // Field name: world_x_cmd
   {
     cdr << ros_message->world_x_cmd;
@@ -136,11 +137,15 @@ bool cdr_serialize_interbotix_xs_msgs__msg__HexJoy(
   return true;
 }
 
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-bool cdr_deserialize_interbotix_xs_msgs__msg__HexJoy(
+static bool _HexJoy__cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
-  interbotix_xs_msgs__msg__HexJoy * ros_message)
+  void * untyped_ros_message)
 {
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  _HexJoy__ros_msg_type * ros_message = static_cast<_HexJoy__ros_msg_type *>(untyped_ros_message);
   // Field name: world_x_cmd
   {
     cdr >> ros_message->world_x_cmd;
@@ -229,7 +234,6 @@ bool cdr_deserialize_interbotix_xs_msgs__msg__HexJoy(
   return true;
 }  // NOLINT(readability/fn_size)
 
-
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
 size_t get_serialized_size_interbotix_xs_msgs__msg__HexJoy(
   const void * untyped_ros_message,
@@ -244,119 +248,103 @@ size_t get_serialized_size_interbotix_xs_msgs__msg__HexJoy(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: world_x_cmd
+  // field.name world_x_cmd
   {
     size_t item_size = sizeof(ros_message->world_x_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: world_y_cmd
+  // field.name world_y_cmd
   {
     size_t item_size = sizeof(ros_message->world_y_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: world_yaw_cmd
+  // field.name world_yaw_cmd
   {
     size_t item_size = sizeof(ros_message->world_yaw_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: place_x_cmd
+  // field.name place_x_cmd
   {
     size_t item_size = sizeof(ros_message->place_x_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: place_y_cmd
+  // field.name place_y_cmd
   {
     size_t item_size = sizeof(ros_message->place_y_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: place_z_cmd
+  // field.name place_z_cmd
   {
     size_t item_size = sizeof(ros_message->place_z_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: place_roll_cmd
+  // field.name place_roll_cmd
   {
     size_t item_size = sizeof(ros_message->place_roll_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: place_pitch_cmd
+  // field.name place_pitch_cmd
   {
     size_t item_size = sizeof(ros_message->place_pitch_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: pose_cmd
+  // field.name pose_cmd
   {
     size_t item_size = sizeof(ros_message->pose_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: move_type_cmd
+  // field.name move_type_cmd
   {
     size_t item_size = sizeof(ros_message->move_type_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: gait_toggle_cmd
+  // field.name gait_toggle_cmd
   {
     size_t item_size = sizeof(ros_message->gait_toggle_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: leg_toggle_cmd
+  // field.name leg_toggle_cmd
   {
     size_t item_size = sizeof(ros_message->leg_toggle_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: stance_cmd
+  // field.name stance_cmd
   {
     size_t item_size = sizeof(ros_message->stance_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: reboot_cmd
+  // field.name reboot_cmd
   {
     size_t item_size = sizeof(ros_message->reboot_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: set_home_pose_cmd
+  // field.name set_home_pose_cmd
   {
     size_t item_size = sizeof(ros_message->set_home_pose_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: speed_cmd
+  // field.name speed_cmd
   {
     size_t item_size = sizeof(ros_message->speed_cmd);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-
-  // Field name: speed_toggle_cmd
+  // field.name speed_toggle_cmd
   {
     size_t item_size = sizeof(ros_message->speed_toggle_cmd);
     current_alignment += item_size +
@@ -364,568 +352,6 @@ size_t get_serialized_size_interbotix_xs_msgs__msg__HexJoy(
   }
 
   return current_alignment - initial_alignment;
-}
-
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-size_t max_serialized_size_interbotix_xs_msgs__msg__HexJoy(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-
-  // Field name: world_x_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: world_y_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: world_yaw_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_x_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_y_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_z_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_roll_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_pitch_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: pose_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: move_type_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: gait_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: leg_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: stance_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: reboot_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: set_home_pose_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: speed_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: speed_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = interbotix_xs_msgs__msg__HexJoy;
-    is_plain =
-      (
-      offsetof(DataType, speed_toggle_cmd) +
-      last_member_size
-      ) == ret_val;
-  }
-  return ret_val;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-bool cdr_serialize_key_interbotix_xs_msgs__msg__HexJoy(
-  const interbotix_xs_msgs__msg__HexJoy * ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  // Field name: world_x_cmd
-  {
-    cdr << ros_message->world_x_cmd;
-  }
-
-  // Field name: world_y_cmd
-  {
-    cdr << ros_message->world_y_cmd;
-  }
-
-  // Field name: world_yaw_cmd
-  {
-    cdr << ros_message->world_yaw_cmd;
-  }
-
-  // Field name: place_x_cmd
-  {
-    cdr << ros_message->place_x_cmd;
-  }
-
-  // Field name: place_y_cmd
-  {
-    cdr << ros_message->place_y_cmd;
-  }
-
-  // Field name: place_z_cmd
-  {
-    cdr << ros_message->place_z_cmd;
-  }
-
-  // Field name: place_roll_cmd
-  {
-    cdr << ros_message->place_roll_cmd;
-  }
-
-  // Field name: place_pitch_cmd
-  {
-    cdr << ros_message->place_pitch_cmd;
-  }
-
-  // Field name: pose_cmd
-  {
-    cdr << ros_message->pose_cmd;
-  }
-
-  // Field name: move_type_cmd
-  {
-    cdr << ros_message->move_type_cmd;
-  }
-
-  // Field name: gait_toggle_cmd
-  {
-    cdr << ros_message->gait_toggle_cmd;
-  }
-
-  // Field name: leg_toggle_cmd
-  {
-    cdr << ros_message->leg_toggle_cmd;
-  }
-
-  // Field name: stance_cmd
-  {
-    cdr << ros_message->stance_cmd;
-  }
-
-  // Field name: reboot_cmd
-  {
-    cdr << ros_message->reboot_cmd;
-  }
-
-  // Field name: set_home_pose_cmd
-  {
-    cdr << ros_message->set_home_pose_cmd;
-  }
-
-  // Field name: speed_cmd
-  {
-    cdr << ros_message->speed_cmd;
-  }
-
-  // Field name: speed_toggle_cmd
-  {
-    cdr << ros_message->speed_toggle_cmd;
-  }
-
-  return true;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-size_t get_serialized_size_key_interbotix_xs_msgs__msg__HexJoy(
-  const void * untyped_ros_message,
-  size_t current_alignment)
-{
-  const _HexJoy__ros_msg_type * ros_message = static_cast<const _HexJoy__ros_msg_type *>(untyped_ros_message);
-  (void)ros_message;
-
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  (void)padding;
-  (void)wchar_size;
-
-  // Field name: world_x_cmd
-  {
-    size_t item_size = sizeof(ros_message->world_x_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: world_y_cmd
-  {
-    size_t item_size = sizeof(ros_message->world_y_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: world_yaw_cmd
-  {
-    size_t item_size = sizeof(ros_message->world_yaw_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: place_x_cmd
-  {
-    size_t item_size = sizeof(ros_message->place_x_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: place_y_cmd
-  {
-    size_t item_size = sizeof(ros_message->place_y_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: place_z_cmd
-  {
-    size_t item_size = sizeof(ros_message->place_z_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: place_roll_cmd
-  {
-    size_t item_size = sizeof(ros_message->place_roll_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: place_pitch_cmd
-  {
-    size_t item_size = sizeof(ros_message->place_pitch_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: pose_cmd
-  {
-    size_t item_size = sizeof(ros_message->pose_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: move_type_cmd
-  {
-    size_t item_size = sizeof(ros_message->move_type_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: gait_toggle_cmd
-  {
-    size_t item_size = sizeof(ros_message->gait_toggle_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: leg_toggle_cmd
-  {
-    size_t item_size = sizeof(ros_message->leg_toggle_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: stance_cmd
-  {
-    size_t item_size = sizeof(ros_message->stance_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: reboot_cmd
-  {
-    size_t item_size = sizeof(ros_message->reboot_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: set_home_pose_cmd
-  {
-    size_t item_size = sizeof(ros_message->set_home_pose_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: speed_cmd
-  {
-    size_t item_size = sizeof(ros_message->speed_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  // Field name: speed_toggle_cmd
-  {
-    size_t item_size = sizeof(ros_message->speed_toggle_cmd);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-
-  return current_alignment - initial_alignment;
-}
-
-ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
-size_t max_serialized_size_key_interbotix_xs_msgs__msg__HexJoy(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment)
-{
-  size_t initial_alignment = current_alignment;
-
-  const size_t padding = 4;
-  const size_t wchar_size = 4;
-  size_t last_member_size = 0;
-  (void)last_member_size;
-  (void)padding;
-  (void)wchar_size;
-
-  full_bounded = true;
-  is_plain = true;
-  // Field name: world_x_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: world_y_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: world_yaw_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_x_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_y_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_z_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_roll_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: place_pitch_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: pose_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: move_type_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: gait_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: leg_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: stance_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: reboot_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: set_home_pose_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: speed_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  // Field name: speed_toggle_cmd
-  {
-    size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint8_t);
-    current_alignment += array_size * sizeof(uint8_t);
-  }
-
-  size_t ret_val = current_alignment - initial_alignment;
-  if (is_plain) {
-    // All members are plain, and type is not empty.
-    // We still need to check that the in-memory alignment
-    // is the same as the CDR mandated alignment.
-    using DataType = interbotix_xs_msgs__msg__HexJoy;
-    is_plain =
-      (
-      offsetof(DataType, speed_toggle_cmd) +
-      last_member_size
-      ) == ret_val;
-  }
-  return ret_val;
-}
-
-
-static bool _HexJoy__cdr_serialize(
-  const void * untyped_ros_message,
-  eprosima::fastcdr::Cdr & cdr)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  const interbotix_xs_msgs__msg__HexJoy * ros_message = static_cast<const interbotix_xs_msgs__msg__HexJoy *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_serialize_interbotix_xs_msgs__msg__HexJoy(ros_message, cdr);
-}
-
-static bool _HexJoy__cdr_deserialize(
-  eprosima::fastcdr::Cdr & cdr,
-  void * untyped_ros_message)
-{
-  if (!untyped_ros_message) {
-    fprintf(stderr, "ros message handle is null\n");
-    return false;
-  }
-  interbotix_xs_msgs__msg__HexJoy * ros_message = static_cast<interbotix_xs_msgs__msg__HexJoy *>(untyped_ros_message);
-  (void)ros_message;
-  return cdr_deserialize_interbotix_xs_msgs__msg__HexJoy(cdr, ros_message);
 }
 
 static uint32_t _HexJoy__get_serialized_size(const void * untyped_ros_message)
@@ -935,19 +361,129 @@ static uint32_t _HexJoy__get_serialized_size(const void * untyped_ros_message)
       untyped_ros_message, 0));
 }
 
-static size_t _HexJoy__max_serialized_size(char & bounds_info)
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_interbotix_xs_msgs
+size_t max_serialized_size_interbotix_xs_msgs__msg__HexJoy(
+  bool & full_bounded,
+  size_t current_alignment)
 {
-  bool full_bounded;
-  bool is_plain;
-  size_t ret_val;
+  size_t initial_alignment = current_alignment;
 
-  ret_val = max_serialized_size_interbotix_xs_msgs__msg__HexJoy(
-    full_bounded, is_plain, 0);
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+  (void)full_bounded;
 
-  bounds_info =
-    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
-    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
-  return ret_val;
+  // member: world_x_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: world_y_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: world_yaw_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: place_x_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: place_y_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: place_z_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: place_roll_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: place_pitch_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: pose_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: move_type_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: gait_toggle_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: leg_toggle_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: stance_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: reboot_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: set_home_pose_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: speed_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: speed_toggle_cmd
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+static size_t _HexJoy__max_serialized_size(bool & full_bounded)
+{
+  return max_serialized_size_interbotix_xs_msgs__msg__HexJoy(
+    full_bounded, 0);
 }
 
 
@@ -957,17 +493,13 @@ static message_type_support_callbacks_t __callbacks_HexJoy = {
   _HexJoy__cdr_serialize,
   _HexJoy__cdr_deserialize,
   _HexJoy__get_serialized_size,
-  _HexJoy__max_serialized_size,
-  nullptr
+  _HexJoy__max_serialized_size
 };
 
 static rosidl_message_type_support_t _HexJoy__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_HexJoy,
   get_message_typesupport_handle_function,
-  &interbotix_xs_msgs__msg__HexJoy__get_type_hash,
-  &interbotix_xs_msgs__msg__HexJoy__get_type_description,
-  &interbotix_xs_msgs__msg__HexJoy__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *
