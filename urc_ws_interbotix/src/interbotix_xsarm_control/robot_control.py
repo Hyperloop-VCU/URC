@@ -25,7 +25,7 @@ class ArmController(Node):
 
         # Initialize robot
         self.bot = InterbotixManipulatorXS(
-            robot_model='wx200',
+            robot_model='wx250', #250 for Adam, 200 for adam jr
             group_name='arm',
             gripper_name='gripper',
         )

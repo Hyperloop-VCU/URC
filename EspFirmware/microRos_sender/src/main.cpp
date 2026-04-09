@@ -49,9 +49,9 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
   msg.linear_acceleration.x = accel.x();
   msg.linear_acceleration.y = accel.y();
   msg.linear_acceleration.z = accel.z();
-  msg.angular_velocity.x = euler.x();
-  msg.angular_velocity.y = euler.y();
-  msg.angular_velocity.z = euler.z();
+  msg.angular_velocity.x = euler.x() * (M_PI / 180.0);
+  msg.angular_velocity.y = euler.y() * (M_PI / 180.0);
+  msg.angular_velocity.z = euler.z() * (M_PI / 180.0);
 }
 
 //pi ssid is pispot, password is pi123456
@@ -66,7 +66,7 @@ void setup() {
   Serial.println("Connecting to WiFi...");
   set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
   Serial.println("Connected!");
- 
+  delay(2000);
 
 
 
