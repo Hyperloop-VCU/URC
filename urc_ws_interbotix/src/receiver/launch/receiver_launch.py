@@ -62,14 +62,18 @@ def generate_launch_description():
         ),
 
         # Executes arm commands from xsarm_joy
-        Node(
-            package='interbotix_xsarm_joy',
-            executable='xsarm_robot.py',
-            name='xsarm_robot',
-            namespace='wx250',
-            output='screen',
-            parameters=[{'robot_model': 'wx250', 'robot_name': 'wx250'}]
-        ),
+        #uses argparse so must use execute process instead of node(basically reading the actual terminal command)
+        ExecuteProcess(
+        cmd=[
+            'ros2', 'run',
+            'interbotix_xsarm_joy',
+            'xsarm_robot.py',
+            '--robot_model', 'wx250',
+            '--robot_name', 'wx250',
+            '--ros-args', '-r', '__ns:=/wx250'
+        ],
+    output='screen'
+),
 
 
     ])
