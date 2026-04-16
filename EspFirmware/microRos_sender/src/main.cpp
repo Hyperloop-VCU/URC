@@ -10,7 +10,7 @@
 
 //declarations
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
-//Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
+Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
 
 
 
@@ -78,14 +78,14 @@ void setup() {
   }
 
   bno.setExtCrystalUse(true);
-/*
+
    if (!bno2.begin()) {
     Serial.println("BNO055 2 not found");
     while (1);
   }
 
   bno2.setExtCrystalUse(true);
-*/
+
   allocator = rcl_get_default_allocator();
 
   //create init_options
@@ -126,7 +126,7 @@ void setup() {
 
 void loop() {
 readIMU(bno,armMsg1);// uncomment if you have bno connected
-//readIMU(bno2,armMsg2);
+readIMU(bno2,armMsg2);
 
 
 //Publish 

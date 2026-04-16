@@ -38,16 +38,16 @@ def generate_launch_description():
           #      ),
         
         # PS4 controller - reads raw joystick input
-        Node(
-            package='joy',
-            executable='joy_node',
-            name='joy_node',
-            namespace='wx250',
-            output='screen',
-            parameters=[{'dev': '/dev/input/js0'}],
-            remappings=[('joy', 'commands/joy_raw')]
-        ),
-
+       # Node(
+        #    package='joy',
+         #   executable='joy_node',
+          #  name='joy_node',
+           # namespace='wx250',
+            #output='screen',
+           # parameters=[{'dev': '/dev/input/js0'}],
+            #remappings=[('joy', 'commands/joy_raw')]
+        #),
+        
         # Translates joystick input to arm commands
         Node(
             package='interbotix_xsarm_joy',
