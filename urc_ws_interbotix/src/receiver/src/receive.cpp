@@ -179,7 +179,7 @@ private:
 
 
         //map buttons
-        set_buttons(joy_msg, ps4.at("WAIST_CCW"), ps4.at("WAIST_CW"), armImu1_angles.yaw); //Waist(move arm side to side)
+        set_buttons(joy_msg, ps4.at("WAIST_CCW"), ps4.at("WAIST_CW"), armImu1_angles.roll); //Waist(move arm side to side)
         set_buttons(joy_msg, ps4.at("EE_Y_INC"), ps4.at("EE_Y_DEC"), handImu_angles.roll); //ee_y(rotate hand to rotate gripper)
         //publish to joy
         finalPub->publish(joy_msg);

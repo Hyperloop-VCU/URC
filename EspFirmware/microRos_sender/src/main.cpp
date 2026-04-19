@@ -7,10 +7,12 @@
 #include <sensor_msgs/msg/imu.h>
 #include <micro_ros_platformio.h>
 #include <rclc/rclc.h>
+#include <rmw_microros/rmw_microros.h>
 
 //declarations
-Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
-Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x29);
+
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x29); //upperarm
+Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x28); //forearm
 
 
 
@@ -57,7 +59,8 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
 //pi ssid is pispot, password is pi123456
 void setup() {
   Serial.begin(115200);
-  Wire.begin(21, 22); //8,9
+  //Wire.begin(4, 5); //8,9
+  Wire.begin(5,6);
   //micro ros udp wifi connection with pi
   IPAddress agent_ip(10, 42, 0, 1); //this is the pi's Ip address
   size_t agent_port = 8888;
@@ -65,6 +68,12 @@ void setup() {
   char psk[]= "pi123456";
   Serial.println("Connecting to WiFi...");
   set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
+  Serial.println("Waiting for micro-ROS agent...");
+  while (rmw_uros_ping_agent(1000, 1) != RMW_RET_OK) {
+    Serial.println("Agent not found, retrying...");
+  delay(500);
+}
+  Serial.println("Agent found!");
   Serial.println("Connected!");
   delay(2000);
 

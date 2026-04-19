@@ -9,11 +9,13 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-
+find_package(interbotix_xs_msgs REQUIRED)
 
 
 add_executable(receive src/receive.cpp)
-
+add_executable(fake_sdk src/fake_sdk.cpp)
+ament_target_dependencies(fake_sdk rclcpp sensor_msgs interbotix_xs_msgs)
+install(TARGETS fake_sdk DESTINATION lib/${PROJECT_NAME})
 
 ament_target_dependencies(receive rclcpp sensor_msgs)
 
