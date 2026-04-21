@@ -239,7 +239,7 @@ private:
         dof_msg.name = "arm"; //there are two names in the message, arm and gripper. you need to set the proper name.
         dof_msg.cmd = { //important to keep track of what is in each index, the msg type predefines what is what
             armImu1_angles.roll,     // index 0 → waist
-            armImu1_angles.pitch,    // index 1 → shoulder  
+            -armImu1_angles.pitch,    // index 1 → shoulder  
             armImu2_angles.pitch,    // index 2 → elbow
             handImu_angles.pitch,    // index 3 → wrist_angle
             handImu_angles.roll      // index 4 → wrist_rotate
