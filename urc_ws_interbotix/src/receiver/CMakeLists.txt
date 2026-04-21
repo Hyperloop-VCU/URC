@@ -18,7 +18,7 @@ ament_target_dependencies(fake_sdk rclcpp sensor_msgs interbotix_xs_msgs)
 install(TARGETS fake_sdk DESTINATION lib/${PROJECT_NAME})
 
 ament_target_dependencies(receive rclcpp sensor_msgs)
-
+ament_target_dependencies(receive rclcpp sensor_msgs interbotix_xs_msgs)
 
 install(DIRECTORY launch
 DESTINATION share/${PROJECT_NAME}

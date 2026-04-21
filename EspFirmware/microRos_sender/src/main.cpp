@@ -59,13 +59,17 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
 //pi ssid is pispot, password is pi123456
 void setup() {
   Serial.begin(115200);
+  delay(1000);
+  Serial.println("stuff");
   //Wire.begin(4, 5); //8,9
   Wire.begin(5,6);
   //micro ros udp wifi connection with pi
   IPAddress agent_ip(10, 42, 0, 1); //this is the pi's Ip address
+  //IPAddress agent_ip(10, 0, 0, 171);
   size_t agent_port = 8888;
   char ssid[] = "pispot";
   char psk[]= "pi123456";
+  
   Serial.println("Connecting to WiFi...");
   set_microros_wifi_transports(ssid, psk, agent_ip, agent_port);
   Serial.println("Waiting for micro-ROS agent...");
