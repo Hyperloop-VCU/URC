@@ -8,6 +8,7 @@
 #include <micro_ros_platformio.h>
 #include <rclc/rclc.h>
 #include <rmw_microros/rmw_microros.h>
+#include <std_msgs/msg/int32_multi_array.h>
 
 //declarations
 
@@ -20,16 +21,18 @@ Adafruit_BNO055 bno2 = Adafruit_BNO055(55, 0x28); //forearm
 
 rcl_publisher_t publisherArm1;
 rcl_publisher_t publisherArm2;
-//rcl_publisher_t publisherHand;
+rcl_publisher_t publisherHand;
+rcl_publisher_t publisherFsr;
 sensor_msgs__msg__Imu armMsg1;
 sensor_msgs__msg__Imu armMsg2;
-//sensor_msgs__msg__Imu handMsg;
+sensor_msgs__msg__Imu handMsg;
+std_msgs__msg__Int32MultiArray fsrMsg;
 rclc_executor_t executor;
 rclc_support_t support;
 rcl_allocator_t allocator;
 rcl_node_t node;
 
-
+int fsr_values[4] = {0, 0, 0, 0};
 
 //error checker
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
@@ -56,9 +59,39 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
   msg.angular_velocity.z = euler.z() * (M_PI / 180.0);
 }
 
+void serialHandImu(){
+  if(Serial1.available()){
+    String line = Serial1.readStringUntil('\n');
+
+    float vals[7];
+    int idx = 0;
+    int start = 0;
+    int comma;
+
+
+    while ((comma = line.indexOf(',',start)) != -1 && idx < 6){
+      vals[idx++] = line.substring(start,comma).toFloat();
+      start = comma + 1;
+    }
+
+    vals[6] = line.substring(start).toFloat();
+
+    handMsg.angular_velocity.x = vals[0] * (M_PI / 180.0);
+    handMsg.angular_velocity.y = vals[1] * (M_PI / 180.0);
+    handMsg.angular_velocity.z = vals[2] * (M_PI / 180.0);
+        
+
+    fsr_values[0] = (int)vals[3];
+    fsr_values[1] = (int)vals[4];
+    fsr_values[2] = (int)vals[5];
+    fsr_values[3] = (int)vals[6];
+  }
+}
+
 //pi ssid is pispot, password is pi123456
 void setup() {
   Serial.begin(115200);
+  Serial1.begin(115200, SERIAL_8N1,44,43); //uart serial
   delay(1000);
   Serial.println("stuff");
   //Wire.begin(4, 5); //8,9
@@ -97,6 +130,9 @@ void setup() {
     while (1);
   }
 
+  
+
+
   bno2.setExtCrystalUse(true);
 
   allocator = rcl_get_default_allocator();
@@ -119,13 +155,24 @@ void setup() {
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
     "/urc/arm/imu2"));
-    /*
+
+    
     RCCHECK(rclc_publisher_init_default(
     &publisherHand,
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
     "/urc/hand/imu"));
-    */
+
+    RCCHECK(rclc_publisher_init_default(
+    &publisherFsr,
+    &node,
+    ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
+    "/urc/hand/fsr"));
+    
+    //initialize fsr msg
+    fsrMsg.data.capacity = 4;
+    fsrMsg.data.size = 4;
+    fsrMsg.data.data = fsr_values;
 
 
 
@@ -140,14 +187,15 @@ void setup() {
 void loop() {
 readIMU(bno,armMsg1);// uncomment if you have bno connected
 readIMU(bno2,armMsg2);
+serialHandImu();
+
 
 
 //Publish 
 rcl_publish(&publisherArm1, &armMsg1, NULL);
 rcl_publish(&publisherArm2, &armMsg2, NULL);
-
-//rcl_publish(&publisherHand, &handMsg, NULL); hand publisher
-
+rcl_publish(&publisherHand, &handMsg, NULL); 
+rcl_publish(&publisherFsr, &fsrMsg, NULL); 
 
 //spins the node and adds delay
 RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));

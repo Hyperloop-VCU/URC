@@ -7,6 +7,10 @@
 //#include "interbotix_xs_msgs/msg/arm_joy.hpp"
 #include <chrono>
 #include "interbotix_xs_msgs/msg/joint_group_command.hpp"
+#include "interbotix_xs_msgs/msg/joint_single_command.hpp"
+#include "std_msgs/msg/int32_multi_array.hpp"
+
+
 
 using namespace std::chrono_literals;
 //make sure micro ros agent is on
@@ -75,9 +79,10 @@ public:
         this->declare_parameter("mode", "dof");
         std::string mode = this->get_parameter("mode").as_string();
 
-        handSub =  create_subscription<sensor_msgs::msg::Imu>("handIMU/data", queue_size, std::bind(&IMUreceiveData::handIMU_callback, this, std::placeholders::_1));
-        //handPub = create_publisher<sensor_msgs::msg::Imu>("topic2_name", queue_size);
+        //hand
+        handSub =  create_subscription<sensor_msgs::msg::Imu>("/urc/hand/imu", queue_size, std::bind(&IMUreceiveData::handIMU_callback, this, std::placeholders::_1));
        
+        fsrSub = create_subscription<std_msgs::msg::Int32MultiArray>("/urc/hand/fsr", queue_size, std::bind(&IMUreceiveData::fsr_callback,this,std::placeholders::_1));
        //upper arm
         armSub1 =  create_subscription<sensor_msgs::msg::Imu>("/urc/arm/imu1", queue_size, std::bind(&IMUreceiveData::armIMU1_callback, this, std::placeholders::_1));
         
@@ -89,7 +94,8 @@ public:
         
         //Dof publisher
         dofPub = create_publisher<interbotix_xs_msgs::msg::JointGroupCommand>("/wx250/commands/joint_group", queue_size);
-        
+        gripperPub = create_publisher<interbotix_xs_msgs::msg::JointSingleCommand>("/wx250/commands/joint_single", queue_size);
+
         //check what mode and then initialize the proper callback, potentially could map mode to an fsr button
         if (mode == "dof"){
             timer_ = this->create_wall_timer(
@@ -120,9 +126,11 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr armSub1;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr armSub2;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr handSub;
-
+    rclcpp::Subscription<std_msgs::msg::Int32MultiArray>::SharedPtr fsrSub;
     rclcpp::Publisher<sensor_msgs::msg::Joy>::SharedPtr joyPub;
     rclcpp::Publisher<interbotix_xs_msgs::msg::JointGroupCommand>::SharedPtr dofPub;
+    rclcpp::Publisher<interbotix_xs_msgs::msg::JointSingleCommand>::SharedPtr gripperPub;
+
 
     //button_mappings cntlr = ps4;
     //std::string controller_type;
@@ -156,6 +164,16 @@ private:
     float imu3_yaw_offset = 0.0;
     bool imu3_calibrated = false;
 
+
+
+    const int fsr_threshold = 10; //it is pull down so when pressed fsr is 0
+    int fsr_values[4] = {0, 0, 0, 0};
+    bool home_override;
+    rclcpp::Time home_start;
+    //index 0 = index
+    //index 1 = middle
+    //index 2 = ring
+    //index 3 = pinky
     //robot scaling
     float scale_factor = 0.0;
 
@@ -195,6 +213,29 @@ private:
         handImu_angles.yaw = msg->angular_velocity.z;
     }
 
+    
+    void fsr_callback(const std_msgs::msg::Int32MultiArray::SharedPtr msg){
+        for (size_t i = 0; i < 4 && i < msg->data.size(); i++){
+            fsr_values[i] = msg->data[i];
+        }
+
+        fsr_actions();
+        
+    }
+
+    void fsr_actions(){
+        if (fsr_values[1] < fsr_threshold){
+            imu1_calibrated = false;
+            imu2_calibrated = false;
+            imu3_calibrated = false;
+        }
+
+        if (fsr_values[2] <fsr_threshold){
+            home_override = true;
+            home_start = this->now();
+        }
+    }
+    
     void set_axis(sensor_msgs::msg::Joy & msg, int index, float angle){  
 
         if (angle > THRESHOLD) msg.axes[index] = 1.0;
@@ -235,6 +276,20 @@ private:
 
 
     void dof_timer_callback(){
+
+        if (home_override) {
+        if ((this->now() - home_start).seconds() > 2.0) {
+            home_override = false;
+        } else {
+            auto home_msg = interbotix_xs_msgs::msg::JointGroupCommand();
+            home_msg.name = "arm";
+            home_msg.cmd = {0.0, 0.0, 0.0, 0.0, 0.0};
+            dofPub->publish(home_msg);
+            return;
+            }
+    }
+
+
         auto dof_msg = interbotix_xs_msgs::msg::JointGroupCommand(); //just making a jointgroup object, this is a custom interbotix one
         dof_msg.name = "arm"; //there are two names in the message, arm and gripper. you need to set the proper name.
         dof_msg.cmd = { //important to keep track of what is in each index, the msg type predefines what is what
@@ -244,7 +299,20 @@ private:
             handImu_angles.pitch,    // index 3 → wrist_angle
             handImu_angles.roll      // index 4 → wrist_rotate
         };
+
+        auto fsr_msg = interbotix_xs_msgs::msg::JointSingleCommand();
+        fsr_msg.name = "gripper";
+        if (fsr_values[0] >= fsr_threshold){
+            fsr_msg.cmd = 0.037; //gripper always open
+        }
+        else{
+            fsr_msg.cmd = -0.037; //gripper closes when pressing index finger
+        }
+
+        
+        
         dofPub->publish(dof_msg);
+        gripperPub->publish(fsr_msg);
     }
     rclcpp::TimerBase::SharedPtr timer_;
 };
