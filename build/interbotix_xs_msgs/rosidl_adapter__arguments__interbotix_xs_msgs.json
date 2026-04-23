@@ -1,0 +1,19 @@
+{
+  "package_name": "interbotix_xs_msgs",
+  "non_idl_tuples": [
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/ArmJoy.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/HexJoy.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/JointGroupCommand.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/JointSingleCommand.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/JointTemps.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/JointTrajectoryCommand.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/LocobotJoy.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:msg/TurretJoy.msg",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/MotorGains.srv",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/OperatingModes.srv",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/Reboot.srv",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/RegisterValues.srv",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/RobotInfo.srv",
+    "/home/ayaan/URC/urc_ws_interbotix/src/interbotix_xs_msgs:srv/TorqueEnable.srv"
+  ]
+}

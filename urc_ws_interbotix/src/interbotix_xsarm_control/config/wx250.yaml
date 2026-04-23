@@ -10,7 +10,8 @@ joint_state_publisher:
 
 groups:
   arm: [waist, shoulder, elbow, wrist_angle, wrist_rotate]
-
+  gripper: [gripper]
+  
 grippers:
   gripper:
     horn_radius: 0.014

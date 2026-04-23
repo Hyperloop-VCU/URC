@@ -207,7 +207,13 @@ private:
     }
     void handIMU_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
        
-        
+        if (!imu3_calibrated) {
+            imu3_roll_offset = msg->angular_velocity.x;
+            imu3_pitch_offset = msg->angular_velocity.y;
+            imu3_yaw_offset = msg->angular_velocity.z;
+            imu3_calibrated = true;
+        }
+
         handImu_angles.roll = msg->angular_velocity.x;
         handImu_angles.pitch = msg->angular_velocity.y;
         handImu_angles.yaw = msg->angular_velocity.z;
@@ -300,19 +306,13 @@ private:
             handImu_angles.roll      // index 4 → wrist_rotate
         };
 
-        auto fsr_msg = interbotix_xs_msgs::msg::JointSingleCommand();
-        fsr_msg.name = "gripper";
-        if (fsr_values[0] >= fsr_threshold){
-            fsr_msg.cmd = 0.037; //gripper always open
-        }
-        else{
-            fsr_msg.cmd = -0.037; //gripper closes when pressing index finger
-        }
+        
+       
 
         
         
         dofPub->publish(dof_msg);
-        gripperPub->publish(fsr_msg);
+        
     }
     rclcpp::TimerBase::SharedPtr timer_;
 };

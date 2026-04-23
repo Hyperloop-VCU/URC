@@ -1,0 +1,251 @@
+[0.060s] Invoking command in '/home/ayaan/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/urc_ws_interbotix/src/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/install/dynamixel_sdk
+[0.530s] -- The C compiler identification is GNU 13.3.0
+[0.531s] -- The CXX compiler identification is GNU 13.3.0
+[0.531s] -- Detecting C compiler ABI info
+[0.531s] -- Detecting C compiler ABI info - done
+[0.531s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.531s] -- Detecting C compile features
+[0.531s] -- Detecting C compile features - done
+[0.531s] -- Detecting CXX compiler ABI info
+[0.531s] -- Detecting CXX compiler ABI info - done
+[0.531s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.531s] -- Detecting CXX compile features
+[0.531s] -- Detecting CXX compile features - done
+[0.531s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.638s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.042s] -- Configuring done (1.0s)
+[1.048s] -- Generating done (0.0s)
+[1.050s] -- Build files have been written to: /home/ayaan/URC/build/dynamixel_sdk
+[1.071s] Invoked command in '/home/ayaan/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ayaan/URC/urc_ws_interbotix/src/dynamixel_sdk -DCMAKE_INSTALL_PREFIX=/home/ayaan/URC/install/dynamixel_sdk
+[1.072s] Invoking command in '/home/ayaan/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/build/dynamixel_sdk -- -j16 -l16
+[1.126s] [  5%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol2_packet_handler.cpp.o[0m
+[1.126s] [ 11%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_bulk_read.cpp.o[0m
+[1.127s] [ 16%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_fast_sync_read.cpp.o[0m
+[1.131s] [ 22%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_handler.cpp.o[0m
+[1.132s] [ 22%] Built target ament_cmake_python_copy_dynamixel_easy_sdk
+[1.133s] [ 27%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_read.cpp.o[0m
+[1.133s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_sync_write.cpp.o[0m
+[1.133s] [ 38%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/protocol1_packet_handler.cpp.o[0m
+[1.134s] [ 50%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/packet_handler.cpp.o[0m
+[1.134s] [ 55%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/connector.cpp.o[0m
+[1.135s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o[0m
+[1.135s] [ 61%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_read.cpp.o[0m
+[1.142s] [ 66%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o[0m
+[1.144s] [ 72%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/dynamixel_error.cpp.o[0m
+[1.144s] [ 77%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/control_table.cpp.o[0m
+[1.149s] [ 77%] Built target ament_cmake_python_copy_dynamixel_sdk
+[1.165s] [ 83%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/group_executor.cpp.o[0m
+[1.234s] [ 88%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_easy_sdk/motor.cpp.o[0m
+[1.330s] running egg_info
+[1.330s] creating dynamixel_easy_sdk.egg-info
+[1.346s] writing dynamixel_easy_sdk.egg-info/PKG-INFO
+[1.347s] writing dependency_links to dynamixel_easy_sdk.egg-info/dependency_links.txt
+[1.347s] writing top-level names to dynamixel_easy_sdk.egg-info/top_level.txt
+[1.347s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[1.397s] reading manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[1.401s] writing manifest file 'dynamixel_easy_sdk.egg-info/SOURCES.txt'
+[1.404s] [ 94%] [32mBuilding CXX object CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o[0m
+[1.470s] [ 94%] Built target ament_cmake_python_build_dynamixel_easy_sdk_egg
+[1.631s] running egg_info
+[1.632s] creating dynamixel_sdk.egg-info
+[1.648s] writing dynamixel_sdk.egg-info/PKG-INFO
+[1.648s] writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+[1.648s] writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+[1.648s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[1.688s] reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[1.689s] writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[1.730s] [ 94%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+[2.166s] [100%] [32m[1mLinking CXX shared library libdynamixel_sdk.so[0m
+[2.242s] [100%] Built target dynamixel_sdk
+[2.252s] Invoked command in '/home/ayaan/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ayaan/URC/build/dynamixel_sdk -- -j16 -l16
+[2.253s] Invoking command in '/home/ayaan/URC/build/dynamixel_sdk': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/build/dynamixel_sdk
+[2.260s] -- Install configuration: ""
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include/
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/connector.hpp
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/group_executor.hpp
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/control_table.hpp
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/data_types.hpp
+[2.260s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_easy_sdk.hpp
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/motor.hpp
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_easy_sdk/dynamixel_error.hpp
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_read.h
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/dynamixel_sdk.h
+[2.261s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_windows.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_arduino.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/packet_handler.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_handler.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_mac.h
+[2.262s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_bulk_read.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/protocol1_packet_handler.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_write.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/port_handler_linux.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_bulk_read.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/protocol2_packet_handler.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_sync_write.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/include//dynamixel_sdk/group_fast_sync_read.h
+[2.263s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/libdynamixel_sdk.so
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288.model
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_m001.model
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181_fw52.model
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t270.model
+[2.264s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_h260.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_40_s250_ra.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_64.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_28.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a099.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_040_s250.model
+[2.265s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a099.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t140.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288_fw52.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w210.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w240.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_100_s500_ra.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl320.model
+[2.266s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_m001.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288_fw52.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xc430_w250.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm42_010_s260.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_a051.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/pm54_060_s250.model
+[2.267s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v210.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077_fw52.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r051.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw540_t260.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m288.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t333.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v270.model
+[2.268s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc430_w150.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl330_m077.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/mx_106.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w270.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h42_20_s300_ra.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w350.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w270.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xl430_w250.model
+[2.269s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_v150.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_a051.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_b001.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t288_fw52.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m54_60_s250_ra.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_100_s500.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/rh_p12_rn.model
+[2.270s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm540_w150.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_v350.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181_fw52.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xw430_t200.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_b001.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh540_w150.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph42_020_s300.model
+[2.271s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xm430_w350.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd540_t150.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/h54_200_s500_ra.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/dynamixel.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ph54_200_s500.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t210.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/2xl430_w250.model
+[2.272s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m181.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xd430_t350.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xh430_w210.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r099.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/m42_10_s260_ra.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_m288.model
+[2.273s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/xc330_t181.model
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym070_210_r099.model
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/control_table/ym080_230_r051.model
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.sh
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/pythonpath.dsv
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/top_level.txt
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/dependency_links.txt
+[2.274s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/PKG-INFO
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk-4.0.3-py3.12.egg-info/SOURCES.txt
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_bulk_read.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_arduino.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_fast_sync_read.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_linux.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_mac.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_handler.cpp
+[2.275s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler_windows.cpp
+[2.312s] Listing '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/__init__.py'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_read.py'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_bulk_write.py'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_read.py'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/group_sync_write.py'...
+[2.312s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/packet_handler.py'...
+[2.313s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/port_handler.py'...
+[2.313s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol1_packet_handler.py'...
+[2.313s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/protocol2_packet_handler.py'...
+[2.313s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_sdk/robotis_def.py'...
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/top_level.txt
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/dependency_links.txt
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/PKG-INFO
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk-4.0.3-py3.12.egg-info/SOURCES.txt
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.cpp
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.cpp
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.cpp
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py
+[2.318s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py
+[2.319s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py
+[2.319s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.cpp
+[2.319s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py
+[2.319s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.cpp
+[2.352s] Listing '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk'...
+[2.352s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/__init__.py'...
+[2.352s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/connector.py'...
+[2.352s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/control_table.py'...
+[2.352s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/data_types.py'...
+[2.353s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/dynamixel_error.py'...
+[2.353s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/group_executor.py'...
+[2.353s] Compiling '/home/ayaan/URC/install/dynamixel_sdk/lib/python3.12/site-packages/dynamixel_easy_sdk/motor.py'...
+[2.357s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.sh
+[2.357s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/library_path.dsv
+[2.357s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/ament_index/resource_index/package_run_dependencies/dynamixel_sdk
+[2.357s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/ament_index/resource_index/parent_prefix_path/dynamixel_sdk
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.sh
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/ament_prefix_path.dsv
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.sh
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/environment/path.dsv
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.bash
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.sh
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.zsh
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/local_setup.dsv
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.dsv
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/ament_index/resource_index/packages/dynamixel_sdk
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport.cmake
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkExport-noconfig.cmake
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_targets-extras.cmake
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.358s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/ament_cmake_export_libraries-extras.cmake
+[2.359s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig.cmake
+[2.359s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/cmake/dynamixel_sdkConfig-version.cmake
+[2.359s] -- Installing: /home/ayaan/URC/install/dynamixel_sdk/share/dynamixel_sdk/package.xml
+[2.361s] Invoked command in '/home/ayaan/URC/build/dynamixel_sdk' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ayaan/ROS-workshop/install/spin_service_caller:/home/ayaan/ROS-workshop/install/orbit_pkg:/home/ayaan/ROS-workshop/install/launch_file_example_pkg:/home/ayaan/ROS-workshop/install/imu_example:/home/ayaan/ROS-workshop/install/example_ros_package:/home/ayaan/ROS-workshop/install/broken_ros_package:/home/ayaan/imprimis/imprimis_ws/install/utils:/home/ayaan/imprimis/imprimis_ws/install/map_goal_to_odom:/home/ayaan/imprimis/imprimis_ws/install/gps_nav_bridge:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ayaan/URC/build/dynamixel_sdk

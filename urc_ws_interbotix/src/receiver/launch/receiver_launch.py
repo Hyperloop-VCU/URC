@@ -28,6 +28,13 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([FindPackageShare('interbotix_xsarm_control'), '/launch/xsarm_control.launch.py' ]),
             launch_arguments={'robot_model': 'wx250'}.items()
         ),
+
+       # Node(
+        #    package="interbotix_xsarm_control",
+         #   executable = "fsr_gripper",
+          #  name = "fsr_gripper"
+
+        #),
           
         #launch actual control program
         #Node(

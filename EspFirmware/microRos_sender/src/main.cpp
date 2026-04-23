@@ -33,6 +33,10 @@ rcl_allocator_t allocator;
 rcl_node_t node;
 
 int fsr_values[4] = {0, 0, 0, 0};
+volatile bool button_on = true;
+const int button_pin = 1;
+volatile unsigned long lastInterruptTime = 0;
+
 
 //error checker
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
@@ -60,33 +64,59 @@ void readIMU(Adafruit_BNO055 &sensor, sensor_msgs__msg__Imu &msg) {
 }
 
 void serialHandImu(){
-  if(Serial1.available()){
-    String line = Serial1.readStringUntil('\n');
+  static char buf[128];
+  static size_t idx = 0;
 
-    float vals[7];
-    int idx = 0;
-    int start = 0;
-    int comma;
+    while(Serial1.available()){
+      char c = Serial1.read();
+      if (c == '\n' || idx >= sizeof(buf) - 1){
+        buf[idx] = '\0';
 
 
-    while ((comma = line.indexOf(',',start)) != -1 && idx < 6){
-      vals[idx++] = line.substring(start,comma).toFloat();
-      start = comma + 1;
+        //Serial.print("RX: [");
+        //Serial.print(buf);
+        //Serial.println("]");
+
+        float vals[7];
+        int parsed = sscanf(buf, "%f,%f,%f,%f,%f,%f,%f",
+        &vals[0],&vals[1],&vals[2],&vals[3],&vals[4],&vals[5],
+        &vals[6]);
+
+        //Serial.print("parsed count: ");
+        //Serial.println(parsed);
+
+        if (parsed == 7) {
+          handMsg.angular_velocity.x = vals[0] * (M_PI / 180.0);
+          handMsg.angular_velocity.y = vals[1] * (M_PI / 180.0);
+          handMsg.angular_velocity.z = vals[2] * (M_PI / 180.0);
+        
+          fsr_values[0] = (int)vals[3];
+          fsr_values[1] = (int)vals[4];
+          fsr_values[2] = (int)vals[5];
+          fsr_values[3] = (int)vals[6];
+        }
+
+        idx = 0;
+      } else{
+        buf[idx++] = c;
+        }
+      }
     }
 
-    vals[6] = line.substring(start).toFloat();
 
-    handMsg.angular_velocity.x = vals[0] * (M_PI / 180.0);
-    handMsg.angular_velocity.y = vals[1] * (M_PI / 180.0);
-    handMsg.angular_velocity.z = vals[2] * (M_PI / 180.0);
-        
-
-    fsr_values[0] = (int)vals[3];
-    fsr_values[1] = (int)vals[4];
-    fsr_values[2] = (int)vals[5];
-    fsr_values[3] = (int)vals[6];
+    
+void IRAM_ATTR handleButton() {
+  
+  unsigned long now = millis();
+  if(now - lastInterruptTime >= 150){
+    button_on = !button_on;
+    lastInterruptTime = now;
   }
 }
+
+    
+  
+
 
 //pi ssid is pispot, password is pi123456
 void setup() {
@@ -96,6 +126,16 @@ void setup() {
   Serial.println("stuff");
   //Wire.begin(4, 5); //8,9
   Wire.begin(5,6);
+  WiFi.persistent(false);   // don't save config to flash
+  WiFi.disconnect(true, true);  // disconnect + erase credentials + erase AP info
+  delay(100);
+  WiFi.mode(WIFI_OFF);
+  delay(100);
+  WiFi.mode(WIFI_STA);
+  delay(100);
+
+  pinMode(button_pin, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(button_pin), handleButton, FALLING);
   //micro ros udp wifi connection with pi
   IPAddress agent_ip(10, 42, 0, 1); //this is the pi's Ip address
   //IPAddress agent_ip(10, 0, 0, 171);
@@ -166,7 +206,7 @@ void setup() {
     RCCHECK(rclc_publisher_init_default(
     &publisherFsr,
     &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(sensor_msgs, msg, Imu),
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32MultiArray),
     "/urc/hand/fsr"));
     
     //initialize fsr msg
@@ -185,20 +225,44 @@ void setup() {
 
 
 void loop() {
-readIMU(bno,armMsg1);// uncomment if you have bno connected
-readIMU(bno2,armMsg2);
-serialHandImu();
+  readIMU(bno,armMsg1);// uncomment if you have bno connected
+  readIMU(bno2,armMsg2);
+  //Serial.print("Serial1 available: ");
+  //Serial.println(Serial1.available());
+  serialHandImu();
 
 
+if(button_on){
 
-//Publish 
-rcl_publish(&publisherArm1, &armMsg1, NULL);
-rcl_publish(&publisherArm2, &armMsg2, NULL);
-rcl_publish(&publisherHand, &handMsg, NULL); 
-rcl_publish(&publisherFsr, &fsrMsg, NULL); 
+  /*
+  Serial.print("hand IMU (rad): ");
+  Serial.print(handMsg.angular_velocity.x, 3);
+  Serial.print(", ");
+  Serial.print(handMsg.angular_velocity.y, 3);
+  Serial.print(", ");
+  Serial.println(handMsg.angular_velocity.z, 3);
 
+  Serial.print("FSR: ");
+  Serial.print(fsr_values[0]); Serial.print(", ");
+  Serial.print(fsr_values[1]); Serial.print(", ");
+  Serial.print(fsr_values[2]); Serial.print(", ");
+  Serial.println(fsr_values[3]);
+  //Serial.println(fsr_values[0]);
+  //Serial.println(fsr_values[1]);
+  //Serial.println(fsr_values[2]);
+  //Serial.println(fsr_values[3]);
+  */
+  //Publish 
+  rcl_publish(&publisherArm1, &armMsg1, NULL);
+  rcl_publish(&publisherArm2, &armMsg2, NULL);
+  rcl_publish(&publisherHand, &handMsg, NULL); 
+  rcl_publish(&publisherFsr, &fsrMsg, NULL); 
+}
+else{
+
+}
 //spins the node and adds delay
-RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(20)));
 }
 
 

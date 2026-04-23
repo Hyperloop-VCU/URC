@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_c.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/_interbotix_xs_msgs_s.ep.rosidl_typesupport_introspection_c.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/__init__.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_arm_joy_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_hex_joy_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_group_command_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_single_command_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_temps_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_joint_trajectory_command_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_locobot_joy_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/msg/_turret_joy_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/__init__.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_motor_gains_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_operating_modes_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_reboot.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_reboot_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_register_values.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_register_values_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_robot_info_s.c"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable.py"
+  "/home/ayaan/URC/build/interbotix_xs_msgs/rosidl_generator_py/interbotix_xs_msgs/srv/_torque_enable_s.c"
+  "CMakeFiles/interbotix_xs_msgs__py"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/interbotix_xs_msgs__py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

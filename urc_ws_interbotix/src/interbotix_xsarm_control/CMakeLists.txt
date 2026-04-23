@@ -21,6 +21,7 @@ find_package(ament_cmake REQUIRED)
 install(
   PROGRAMS
     demos/bartender.py
+    demos/fsr_gripper.py
     demos/ee_cartesian_trajectory.py
     demos/ee_pose_components.py
     demos/ee_pose_matrix_control.py
@@ -30,6 +31,7 @@ install(
     demos/joint_pwm_control.py
     demos/joint_trajectory_control.py
     robot_control.py
+
   DESTINATION
     lib/${PROJECT_NAME}
 )

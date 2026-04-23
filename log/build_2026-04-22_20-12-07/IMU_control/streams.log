@@ -1,0 +1,37 @@
+[1.025s] Invoking command in '/home/ayaan/URC/urc_ws_interbotix/src/IMU_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/ayaan/URC/build/IMU_control/build install --record /home/ayaan/URC/build/IMU_control/install.log --single-version-externally-managed install_data
+[1.221s] running egg_info
+[1.221s] creating ../../../build/IMU_control/IMU_control.egg-info
+[1.235s] writing ../../../build/IMU_control/IMU_control.egg-info/PKG-INFO
+[1.236s] writing dependency_links to ../../../build/IMU_control/IMU_control.egg-info/dependency_links.txt
+[1.236s] writing entry points to ../../../build/IMU_control/IMU_control.egg-info/entry_points.txt
+[1.237s] writing requirements to ../../../build/IMU_control/IMU_control.egg-info/requires.txt
+[1.237s] writing top-level names to ../../../build/IMU_control/IMU_control.egg-info/top_level.txt
+[1.237s] writing manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[1.269s] reading manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[1.269s] writing manifest file '../../../build/IMU_control/IMU_control.egg-info/SOURCES.txt'
+[1.269s] running build
+[1.269s] running build_py
+[1.273s] creating /home/ayaan/URC/build/IMU_control/build
+[1.273s] creating /home/ayaan/URC/build/IMU_control/build/lib
+[1.273s] creating /home/ayaan/URC/build/IMU_control/build/lib/IMU_control
+[1.273s] copying IMU_control/__init__.py -> /home/ayaan/URC/build/IMU_control/build/lib/IMU_control
+[1.273s] copying IMU_control/main.py -> /home/ayaan/URC/build/IMU_control/build/lib/IMU_control
+[1.273s] running install
+[1.276s] running install_lib
+[1.313s] creating /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[1.313s] copying /home/ayaan/URC/build/IMU_control/build/lib/IMU_control/__init__.py -> /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[1.313s] copying /home/ayaan/URC/build/IMU_control/build/lib/IMU_control/main.py -> /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control
+[1.316s] byte-compiling /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control/__init__.py to __init__.cpython-312.pyc
+[1.316s] byte-compiling /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control/main.py to main.cpython-312.pyc
+[1.317s] running install_data
+[1.319s] creating /home/ayaan/URC/install/IMU_control/share/ament_index
+[1.320s] creating /home/ayaan/URC/install/IMU_control/share/ament_index/resource_index
+[1.320s] creating /home/ayaan/URC/install/IMU_control/share/ament_index/resource_index/packages
+[1.320s] copying resource/IMU_control -> /home/ayaan/URC/install/IMU_control/share/ament_index/resource_index/packages
+[1.320s] copying package.xml -> /home/ayaan/URC/install/IMU_control/share/IMU_control
+[1.320s] running install_egg_info
+[1.360s] Copying ../../../build/IMU_control/IMU_control.egg-info to /home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages/IMU_control-0.0.0-py3.12.egg-info
+[1.363s] running install_scripts
+[1.522s] Installing IMU_control script to /home/ayaan/URC/install/IMU_control/lib/IMU_control
+[1.522s] writing list of installed files to '/home/ayaan/URC/build/IMU_control/install.log'
+[1.601s] Invoked command in '/home/ayaan/URC/urc_ws_interbotix/src/IMU_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ayaan/URC/build/IMU_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ayaan/URC/install/IMU_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/IMU_control build --build-base /home/ayaan/URC/build/IMU_control/build install --record /home/ayaan/URC/build/IMU_control/install.log --single-version-externally-managed install_data

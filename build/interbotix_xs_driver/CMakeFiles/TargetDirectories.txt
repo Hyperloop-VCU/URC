@@ -1,0 +1,10 @@
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/uninstall.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/interbotix_xs_driver_uninstall.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/interbotix_xs_driver.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/test.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/edit_cache.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/rebuild_cache.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/list_install_components.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/install.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/install/local.dir
+/home/ayaan/URC/build/interbotix_xs_driver/CMakeFiles/install/strip.dir

@@ -12,7 +12,7 @@ const int FSR_PINS[4] = {A0, A1, A2, A3};
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial1.begin(115200);
   Wire.begin();
   if (!bno.begin()) {
         Serial.println("BNO055 not found");
@@ -33,13 +33,13 @@ void loop() {
     }  
 
   //commas are for csv format
-  Serial.print(euler.x()); Serial.print(",");
-  Serial.print(euler.y()); Serial.print(",");
-  Serial.print(euler.z()); Serial.print(",");
-  Serial.print(fsr[0]); Serial.print(",");
-  Serial.print(fsr[1]); Serial.print(",");
-  Serial.print(fsr[2]); Serial.print(",");
-  Serial.println(fsr[3]);
+  Serial1.print(euler.x()); Serial1.print(",");
+  Serial1.print(euler.y()); Serial1.print(",");
+  Serial1.print(euler.z()); Serial1.print(",");
+  Serial1.print(fsr[0]); Serial1.print(",");
+  Serial1.print(fsr[1]); Serial1.print(",");
+  Serial1.print(fsr[2]); Serial1.print(",");
+  Serial1.println(fsr[3]);
 
 
 
