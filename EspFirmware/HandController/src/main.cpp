@@ -10,9 +10,8 @@
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
 uint8_t receiverMac[6] = {}; //Dongle
 esp_now_peer_info_t slave;
-slave.channel = CHANNEL;
 unsigned long lastSend = 0;
-const unsigned long refreshRate = 15 //in ms, bno055 hz is 100Hz/10ms, however that will draw more power
+const unsigned long refreshRate = 15; //in ms, bno055 hz is 100Hz/10ms, however that will draw more power
 int fsr_values[4] = {0, 0, 0, 0};
 volatile bool button_on = true;
 const int button_pin = 1;
@@ -35,10 +34,11 @@ struct ImuHandData {
 };
 
 ImuHandData IMU1;
-void readIMU(Adafruit_BNO055 &sensor, ImuArmData &data);
+void readIMU(Adafruit_BNO055 &sensor, ImuHandData &data);
 void espSetup();
 void IRAM_ATTR handleButton();
 void readFSR();
+void OnDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status);
 
 void setup() {
   Serial.begin(115200);
@@ -51,7 +51,7 @@ void setup() {
 void loop() {
   if (millis() - lastSend >= refreshRate){
     lastSend += refreshRate;
-    readIMU(bno, packet.IMU1)
+    readIMU(bno, IMU1);
     int rawValue = analogRead(FSR_PIN);
     float voltage = rawValue *(3.3/4095.0);
     int pressure = map(rawValue, 0, 4095, 0, 100);
@@ -59,17 +59,22 @@ void loop() {
   }
 }
 
-void readIMU(Adafruit_BNO055 &sensor, ImuArmData &msg) {
+void readIMU(Adafruit_BNO055 &sensor, ImuHandData &msg) {
   imu::Vector<3> accel = sensor.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
   imu::Vector<3> euler = sensor.getVector(Adafruit_BNO055::VECTOR_EULER);
-  
+
   msg.Connected = true;
-  msg.linear_acceleration.x = accel.x();
-  msg.linear_acceleration.y = accel.y();
-  msg.linear_acceleration.z = accel.z();
-  msg.angular_velocity.x = euler.x() * (M_PI / 180.0);
-  msg.angular_velocity.y = euler.y() * (M_PI / 180.0);
-  msg.angular_velocity.z = euler.z() * (M_PI / 180.0);
+  msg.Linear_x = accel.x();
+  msg.Linear_y = accel.y();
+  msg.Linear_z = accel.z();
+  msg.Yaw   = euler.x() * (M_PI / 180.0); // BNO055 euler: x=Yaw, y=Pitch, z=Roll
+  msg.Pitch = euler.y() * (M_PI / 180.0);
+  msg.Roll  = euler.z() * (M_PI / 180.0);
+}
+
+void OnDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status) {
+  Serial.print("Send status: ");
+  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "OK" : "FAIL");
 }
     
 void IRAM_ATTR handleButton() {
@@ -110,8 +115,5 @@ void espSetup(){
 }
 
 void readFSR(){
-  fsr_values[0] = (int)vals[3];
-  fsr_values[1] = (int)vals[4];
-  fsr_values[2] = (int)vals[5];
-  fsr_values[3] = (int)vals[6];
+  // TODO: FSR handling — left as-is for now (vals was never defined, dead code)
 }
