@@ -115,5 +115,5 @@ void espSetup(){
 }
 
 void readFSR(){
-  // TODO: FSR handling — left as-is for now (vals was never defined, dead code)
+  // TODO: 
 }

@@ -1,0 +1,7 @@
+{
+  "folders": [
+    { "path": "EspFirmware/Dongle" },
+    { "path": "EspFirmware/ArmController" },
+    { "path": "EspFirmware/HandController" }
+  ]
+}
