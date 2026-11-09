@@ -4,6 +4,7 @@
 #include <esp_wifi.h>
 #include <Wire.h>
 #include <Adafruit_BNO055.h>
+#include "urc_msgs.h"
 
 #define CHANNEL 1
 #define FSR_PIN 1
@@ -23,18 +24,8 @@ const int FSR_PINS[4] = {A0, A1, A2, A3};
 //A3 = pinky
 
 
-struct ImuHandData {
-  bool Connected;
-  float Linear_x;
-  float Linear_y;
-  float Linear_z;
-  float Roll;
-  float Pitch;
-  float Yaw;  
-};
-
-ImuHandData IMU1;
-void readIMU(Adafruit_BNO055 &sensor, ImuHandData &data);
+HandMsg packet = {};
+void readIMU(Adafruit_BNO055 &sensor, ImuData &data);
 void espSetup();
 void IRAM_ATTR handleButton();
 void readFSR();
@@ -46,30 +37,32 @@ void setup() {
   analogSetAttenuation(ADC_11db);
   Wire.begin(8, 9);
   espSetup();
+  packet.header.type = MSG_HAND;
 }
 
 void loop() {
   if (millis() - lastSend >= refreshRate){
     lastSend += refreshRate;
-    readIMU(bno, IMU1);
+    readIMU(bno, packet.imu);
     int rawValue = analogRead(FSR_PIN);
     float voltage = rawValue *(3.3/4095.0);
     int pressure = map(rawValue, 0, 4095, 0, 100);
-    esp_now_send(slave.peer_addr, (uint8_t *)&IMU1, sizeof(IMU1));
+    packet.header.seq++;
+    esp_now_send(slave.peer_addr, (uint8_t *)&packet, sizeof(packet));
   }
 }
 
-void readIMU(Adafruit_BNO055 &sensor, ImuHandData &msg) {
+void readIMU(Adafruit_BNO055 &sensor, ImuData &msg) {
   imu::Vector<3> accel = sensor.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
   imu::Vector<3> euler = sensor.getVector(Adafruit_BNO055::VECTOR_EULER);
 
-  msg.Connected = true;
-  msg.Linear_x = accel.x();
-  msg.Linear_y = accel.y();
-  msg.Linear_z = accel.z();
-  msg.Yaw   = euler.x() * (M_PI / 180.0); // BNO055 euler: x=Yaw, y=Pitch, z=Roll
-  msg.Pitch = euler.y() * (M_PI / 180.0);
-  msg.Roll  = euler.z() * (M_PI / 180.0);
+  msg.connected = 1;
+  msg.linear_x = accel.x();
+  msg.linear_y = accel.y();
+  msg.linear_z = accel.z();
+  msg.yaw   = euler.x() * (M_PI / 180.0); // BNO055 euler: x=Yaw, y=Pitch, z=Roll
+  msg.pitch = euler.y() * (M_PI / 180.0);
+  msg.roll  = euler.z() * (M_PI / 180.0);
 }
 
 void OnDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status) {

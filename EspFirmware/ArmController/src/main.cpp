@@ -4,6 +4,7 @@
 #include <esp_wifi.h>
 #include <Wire.h>
 #include <Adafruit_BNO055.h>
+#include "urc_msgs.h"
 
 #define CHANNEL 1
 
@@ -14,24 +15,9 @@ esp_now_peer_info_t slave;
 unsigned long lastSend = 0;
 const unsigned long refreshRate = 15; //in ms, bno055 hz is 100Hz/10ms, however that will draw more power
 
-struct ImuArmData {
-  bool Connected;
-  float Linear_x;
-  float Linear_y;
-  float Linear_z;
-  float Roll;
-  float Pitch;
-  float Yaw;
-};
+ArmMsg packet = {};
 
-struct ArmMsg {
-  ImuArmData upperArm;
-  ImuArmData foreArm;
-};
-
-ArmMsg packet;
-
-void readIMU(Adafruit_BNO055 &sensor, ImuArmData &data);
+void readIMU(Adafruit_BNO055 &sensor, ImuData &data);
 void espSetup();
 void OnDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status);
 
@@ -40,7 +26,7 @@ void setup() {
   Serial.begin(115200);
   Wire.begin(8, 9);
   espSetup();
-
+  packet.header.type = MSG_ARM;
 }
 
 void loop() {
@@ -48,21 +34,22 @@ void loop() {
     lastSend += refreshRate;
     readIMU(bno,  packet.upperArm);
     readIMU(bno2, packet.foreArm);
+    packet.header.seq++;
     esp_now_send(slave.peer_addr, (uint8_t *)&packet, sizeof(packet));
   }
 }
 
-void readIMU(Adafruit_BNO055 &sensor, ImuArmData &msg) {
+void readIMU(Adafruit_BNO055 &sensor, ImuData &msg) {
   imu::Vector<3> accel = sensor.getVector(Adafruit_BNO055::VECTOR_ACCELEROMETER);
   imu::Vector<3> euler = sensor.getVector(Adafruit_BNO055::VECTOR_EULER);
 
-  msg.Connected = true;
-  msg.Linear_x = accel.x();
-  msg.Linear_y = accel.y();
-  msg.Linear_z = accel.z();
-  msg.Yaw   = euler.x() * (M_PI / 180.0); // BNO055 euler: x=Yaw, y=Pitch, z=Roll
-  msg.Pitch = euler.y() * (M_PI / 180.0);
-  msg.Roll  = euler.z() * (M_PI / 180.0);
+  msg.connected = 1;
+  msg.linear_x = accel.x();
+  msg.linear_y = accel.y();
+  msg.linear_z = accel.z();
+  msg.yaw   = euler.x() * (M_PI / 180.0); // BNO055 euler: x=Yaw, y=Pitch, z=Roll
+  msg.pitch = euler.y() * (M_PI / 180.0);
+  msg.roll  = euler.z() * (M_PI / 180.0);
 }
 
 void OnDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status) {
