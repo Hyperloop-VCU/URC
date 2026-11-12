@@ -6,8 +6,8 @@
 #include "esp_wifi.h"
 #include "esp_event.h"
 #include "nvs_flash.h"
-//#include "tinyusb.h"
-//#include "tinyusb_net.h"
+#include "tinyusb.h"
+#include "tinyusb_net.h"
 #include "esp_netif.h"
 #include "dongle.h"
 #include "esp_mac.h"
@@ -20,8 +20,8 @@ static void wifi_init(void);
 static esp_err_t espnow_init(void);
 static void espnow_recv_task(void *arg);
 static void espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *data, int len);
-
-
+static esp_err_t tiny_setup(void);
+static esp_err_t usb_net_recv_cb(void *buffer, uint16_t len, void *ctx);
 
 
 
@@ -129,9 +129,51 @@ static void espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *
 }
 
 
+//TINY USB
+static esp_err_t tiny_setup(void){
+    tinyusb_net_config_t net_cfg = {};
+    const tinyusb_config_t tusb_cfg = {};
+    ESP_ERROR_CHECK(esp_read_mac(net_cfg.mac_addr, ESP_MAC_ETH));
+    net_cfg.on_recv_callback = usb_net_recv_cb;
+
+
+
+    ESP_ERROR_CHECK(tinyusb_driver_install(&tusb_cfg));
+    ESP_ERROR_CHECK(tinyusb_net_init(TINYUSB_USBDEV_0, &net_cfg));
+
+    return ESP_OK;
+}
+
+
+static esp_err_t usb_net_recv_cb(void *buffer, uint16_t len, void *ctx){
+    ESP_LOGI(TAG, "USB rx %u bytes", len);
+    return ESP_OK;
+
+
+    /*
+    
+    if (s_usb_netif == NULL) {
+        return ESP_OK;                    // netif not created yet - drop the frame
+    }
+
+    void *copy = malloc(len);
+    if (copy == NULL) {
+        return ESP_ERR_NO_MEM;            // out of memory - drop the frame
+    }
+    memcpy(copy, buffer, len);
+
+    return esp_netif_receive(s_usb_netif, copy, len, NULL);*/
+}
+
+//RTPS
+
+
+//DHCP
+
+//Main
 extern "C" void app_main(void) {
     ESP_LOGI(TAG, "Dongle starting");
-    esp_err_t ret = nvs_flash_init();
+    esp_err_t ret = nvs_flash_init(); 
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK( nvs_flash_erase() );
         ret = nvs_flash_init();
@@ -143,16 +185,5 @@ extern "C" void app_main(void) {
     ESP_ERROR_CHECK(esp_wifi_get_mac(WIFI_IF_STA,mac));
     ESP_LOGI(TAG, "Dongle MAC: " MACSTR, MAC2STR(mac));
     ESP_ERROR_CHECK(espnow_init());
+    ESP_ERROR_CHECK(tiny_setup());
 }
-
-
-
-
-
-//TINY USB
-
-
-//RTPS
-
-
-//DHCP
