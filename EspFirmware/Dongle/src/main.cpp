@@ -15,6 +15,8 @@
 
 static const char *TAG = "dongle";
 static QueueHandle_t s_recv_queue = NULL;
+static esp_netif_t *s_usb_netif = NULL;
+
 
 static void wifi_init(void);
 static esp_err_t espnow_init(void);
@@ -22,7 +24,7 @@ static void espnow_recv_task(void *arg);
 static void espnow_recv_cb(const esp_now_recv_info_t *recv_info, const uint8_t *data, int len);
 static esp_err_t tiny_setup(void);
 static esp_err_t usb_net_recv_cb(void *buffer, uint16_t len, void *ctx);
-
+static esp_err_t usb_netif_init(void);
 
 
 
@@ -169,6 +171,29 @@ static esp_err_t usb_net_recv_cb(void *buffer, uint16_t len, void *ctx){
 
 
 //DHCP
+
+static esp_err_t usb_netif_init(void){
+    static const esp_netif_ip_info_t s_usb_ip_info = {
+    .ip      = { .addr = ESP_IP4TOADDR(192, 168, 7, 1) },
+    .netmask = { .addr = ESP_IP4TOADDR(255, 255, 255, 0) },
+    .gw      = { .addr = ESP_IP4TOADDR(192, 168, 7, 1) },
+    };
+
+    esp_netif_inherent_config_t base = {};
+    base.flags      = (esp_netif_flags_t)(ESP_NETIF_DHCP_SERVER | ESP_NETIF_FLAG_AUTOUP);
+    base.ip_info    = &s_usb_ip_info;
+    base.if_key     = "USB_NCM";
+    base.if_desc    = "usb";
+    base.route_prio = 10;
+    ESP_ERROR_CHECK(esp_read_mac(base.mac, ESP_MAC_ETH));
+    base.mac[0] |= 0x02;   // must differ from the host-side MAC TinyUSB uses
+
+
+    esp_netif_driver_ifconfig_t driver = {};
+    driver.handle = (void *)1;
+    driver.transmit = usb_net_transmit;
+
+}
 
 //Main
 extern "C" void app_main(void) {
